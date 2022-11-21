@@ -67,15 +67,16 @@ namespace proyectoFinalMoanso
 
         private void Ingresar_Click(object sender, EventArgs e)
         {
-            if (cajausuario.Text == " " && cajacontra.Text == " ")
+            if (cajausuario.Text == "1" && cajacontra.Text == "1")
             {
-                MessageBox.Show("hola");
+                PrincipalAdmin pa = new PrincipalAdmin();
+                pa.Visible= true;
             }
             else
             {
                 MessageBox.Show("usuario o contraseña incorrecta, verificalo nuevamente");
-                cajausuario.Text = " ";
-                cajacontra.Text = "";
+                cajausuario.Text = string.Empty;
+                cajacontra.Text = string.Empty;
             }
         }
     }
