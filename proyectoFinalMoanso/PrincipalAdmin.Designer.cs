@@ -41,6 +41,7 @@
             this.BtnListarComrpobante.TabIndex = 0;
             this.BtnListarComrpobante.Text = "Listar Cliente";
             this.BtnListarComrpobante.UseVisualStyleBackColor = true;
+            this.BtnListarComrpobante.Click += new System.EventHandler(this.BtnListarComrpobante_Click);
             // 
             // btnListarComprobante
             // 
@@ -53,12 +54,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(268, 279);
+            this.button3.Location = new System.Drawing.Point(231, 333);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(432, 126);
+            this.button3.Size = new System.Drawing.Size(432, 100);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
+            this.button3.Text = "agregar insumos";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // PrincipalAdmin
             // 

@@ -16,5 +16,16 @@ namespace proyectoFinalMoanso
         {
             InitializeComponent();
         }
+
+        private void BtnListarComrpobante_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MantenedorInsumos m = new MantenedorInsumos();
+            m.Visible= true;
+        }
     }
 }
