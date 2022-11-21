@@ -67,7 +67,7 @@ namespace proyectoFinalMoanso
 
         private void Ingresar_Click(object sender, EventArgs e)
         {
-            if (cajausuario.Text == "administrador" && cajacontra.Text == "moansox3")
+            if (cajausuario.Text == " " && cajacontra.Text == " ")
             {
                 MessageBox.Show("hola");
             }
