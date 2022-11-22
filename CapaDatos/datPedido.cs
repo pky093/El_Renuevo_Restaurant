@@ -54,6 +54,8 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return inserta;
         }
+
+
     }
 
 }

@@ -31,10 +31,6 @@
             this.btnContinuo = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.panelCN = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cajatextoDNI = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelF = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
@@ -47,10 +43,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cajaDni = new System.Windows.Forms.TextBox();
             this.asdasdsa = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cajatextoDNI = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelCN.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panelF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnContinuo
@@ -77,53 +77,10 @@
             // 
             this.panelCN.Controls.Add(this.btnContinuo);
             this.panelCN.Controls.Add(this.btnNuevo);
-            this.panelCN.Location = new System.Drawing.Point(88, 114);
+            this.panelCN.Location = new System.Drawing.Point(83, 114);
             this.panelCN.Name = "panelCN";
             this.panelCN.Size = new System.Drawing.Size(248, 365);
             this.panelCN.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.cajatextoDNI);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(424, 130);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(523, 365);
-            this.panel1.TabIndex = 3;
-            this.panel1.UseWaitCursor = true;
-            this.panel1.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(229, 213);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 65);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.UseWaitCursor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // cajatextoDNI
-            // 
-            this.cajatextoDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cajatextoDNI.Location = new System.Drawing.Point(133, 83);
-            this.cajatextoDNI.Name = "cajatextoDNI";
-            this.cajatextoDNI.Size = new System.Drawing.Size(353, 32);
-            this.cajatextoDNI.TabIndex = 1;
-            this.cajatextoDNI.UseWaitCursor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dni:";
-            this.label1.UseWaitCursor = true;
             // 
             // panelF
             // 
@@ -138,7 +95,7 @@
             this.panelF.Controls.Add(this.label3);
             this.panelF.Controls.Add(this.cajaDni);
             this.panelF.Controls.Add(this.asdasdsa);
-            this.panelF.Location = new System.Drawing.Point(175, 12);
+            this.panelF.Location = new System.Drawing.Point(132, 12);
             this.panelF.Name = "panelF";
             this.panelF.Size = new System.Drawing.Size(772, 618);
             this.panelF.TabIndex = 4;
@@ -258,6 +215,49 @@
             this.asdasdsa.Text = "Dni:";
             this.asdasdsa.UseWaitCursor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.cajatextoDNI);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(347, 114);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(620, 365);
+            this.panel1.TabIndex = 3;
+            this.panel1.UseWaitCursor = true;
+            this.panel1.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(229, 213);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 65);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseWaitCursor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cajatextoDNI
+            // 
+            this.cajatextoDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cajatextoDNI.Location = new System.Drawing.Point(180, 83);
+            this.cajatextoDNI.Name = "cajatextoDNI";
+            this.cajatextoDNI.Size = new System.Drawing.Size(353, 32);
+            this.cajatextoDNI.TabIndex = 1;
+            this.cajatextoDNI.UseWaitCursor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(43, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Dni:";
+            this.label1.UseWaitCursor = true;
+            // 
             // MantenedorCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -270,11 +270,11 @@
             this.Name = "MantenedorCliente";
             this.Text = "MantenedorCliente";
             this.panelCN.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panelF.ResumeLayout(false);
             this.panelF.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

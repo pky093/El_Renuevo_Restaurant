@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -54,6 +55,33 @@ namespace proyectoFinalMoanso
         private void button1_Click(object sender, EventArgs e)
         {
             this.dni = cajatextoDNI.Text;
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=MIGUEL; Initial Catalog = ElRenuevo;Integrated Security=true");
+                con.Open();
+                SqlCommand cmd = new SqlCommand("consultarDni", con);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@dni", cajatextoDNI.Text);
+
+                using (SqlDataReader dr = cmd.ExecuteReader())
+                {
+                    if (dr.HasRows)
+                    {
+                        MessageBox.Show("puede continuar con la ventana pedido");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("EL DNI  NO EXISTE");
+                    }
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
