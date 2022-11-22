@@ -73,6 +73,16 @@ namespace proyectoFinalMoanso.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2048745 {
+            get {
+                object obj = ResourceManager.GetObject("2048745", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _21 {
             get {
                 object obj = ResourceManager.GetObject("21", resourceCulture);
@@ -96,6 +106,16 @@ namespace proyectoFinalMoanso.Properties {
         internal static System.Drawing.Bitmap _64 {
             get {
                 object obj = ResourceManager.GetObject("64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _88666 {
+            get {
+                object obj = ResourceManager.GetObject("88666", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +273,36 @@ namespace proyectoFinalMoanso.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap descarga {
+            get {
+                object obj = ResourceManager.GetObject("descarga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga__1_ {
+            get {
+                object obj = ResourceManager.GetObject("descarga (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga__2_ {
+            get {
+                object obj = ResourceManager.GetObject("descarga (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dinero_en_efectivo {
             get {
                 object obj = ResourceManager.GetObject("dinero-en-efectivo", resourceCulture);
@@ -343,6 +393,36 @@ namespace proyectoFinalMoanso.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__1_ {
+            get {
+                object obj = ResourceManager.GetObject("images (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__2_ {
+            get {
+                object obj = ResourceManager.GetObject("images (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iniciar_sesion_oficial {
             get {
                 object obj = ResourceManager.GetObject("iniciar sesion oficial", resourceCulture);
@@ -366,6 +446,17 @@ namespace proyectoFinalMoanso.Properties {
         internal static System.Drawing.Bitmap iniciars__1_ {
             get {
                 object obj = ResourceManager.GetObject("iniciars (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_mark_s_fish_shop_cafe_take_out_fish_and_chips_rest_fish_shop_5b1508fc309ed5_0354795015281052121992 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-mark-s-fish-shop-cafe-take-out-fish-and-chips-rest-fish-shop-5b1508fc309e" +
+                        "d5.0354795015281052121992", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,9 +524,39 @@ namespace proyectoFinalMoanso.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap perfil_de_cliente_e1549901099803_1 {
+            get {
+                object obj = ResourceManager.GetObject("perfil-de-cliente-e1549901099803-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap placa_de_tenedor_y_cuchillo {
             get {
                 object obj = ResourceManager.GetObject("placa-de-tenedor-y-cuchillo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_update_button_miscellaneous_angle_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-update-button-miscellaneous-angle-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_cafe_indian_cuisine_online_food_ordering_menu_love_food_text {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-cafe-indian-cuisine-online-food-ordering-menu-love-food-text", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

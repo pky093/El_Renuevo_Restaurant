@@ -34,7 +34,6 @@
             this.panelF = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cajaNombre = new System.Windows.Forms.TextBox();
             this.cajaApellido = new System.Windows.Forms.TextBox();
             this.cajaTelefono = new System.Windows.Forms.TextBox();
@@ -47,10 +46,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.cajatextoDNI = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelCN.SuspendLayout();
             this.panelF.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnContinuo
@@ -137,18 +137,6 @@
             this.BtnAgregar.UseVisualStyleBackColor = true;
             this.BtnAgregar.UseWaitCursor = true;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.avatar;
-            this.pictureBox1.Location = new System.Drawing.Point(179, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(233, 191);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
             // 
             // cajaNombre
             // 
@@ -291,6 +279,19 @@
             this.label1.Text = "DNI:";
             this.label1.UseWaitCursor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.perfil_de_cliente_e1549901099803_1;
+            this.pictureBox1.Location = new System.Drawing.Point(148, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(233, 191);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // MantenedorCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,9 +308,9 @@
             this.panelCN.ResumeLayout(false);
             this.panelF.ResumeLayout(false);
             this.panelF.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

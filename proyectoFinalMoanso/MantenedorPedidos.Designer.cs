@@ -100,7 +100,7 @@
             "cabrito",
             "arroz con pollo"});
             this.comboBox1.Location = new System.Drawing.Point(280, 210);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(233, 30);
             this.comboBox1.TabIndex = 7;
@@ -114,7 +114,7 @@
             "gaseosas personales",
             "inka de litro"});
             this.comboBox2.Location = new System.Drawing.Point(280, 273);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(233, 30);
             this.comboBox2.TabIndex = 8;
@@ -139,7 +139,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Location = new System.Drawing.Point(280, 384);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(233, 50);
             this.btnGuardar.TabIndex = 10;
@@ -180,12 +180,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.comida21;
+            this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.png_transparent_cafe_indian_cuisine_online_food_ordering_menu_love_food_text;
             this.pictureBox1.Location = new System.Drawing.Point(305, 71);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(184, 135);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -207,7 +207,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MantenedorPedidos";
             this.Text = "MantenedorPedidos";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
