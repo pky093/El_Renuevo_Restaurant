@@ -39,7 +39,7 @@
             this.BtnListarComrpobante.Name = "BtnListarComrpobante";
             this.BtnListarComrpobante.Size = new System.Drawing.Size(351, 126);
             this.BtnListarComrpobante.TabIndex = 0;
-            this.BtnListarComrpobante.Text = "Listar Cliente";
+            this.BtnListarComrpobante.Text = "Lista de Cliente";
             this.BtnListarComrpobante.UseVisualStyleBackColor = true;
             this.BtnListarComrpobante.Click += new System.EventHandler(this.BtnListarComrpobante_Click);
             // 
@@ -49,7 +49,7 @@
             this.btnListarComprobante.Name = "btnListarComprobante";
             this.btnListarComprobante.Size = new System.Drawing.Size(346, 126);
             this.btnListarComprobante.TabIndex = 1;
-            this.btnListarComprobante.Text = "Listar Comprobante";
+            this.btnListarComprobante.Text = "Listas de Comprobantes";
             this.btnListarComprobante.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -58,7 +58,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(432, 100);
             this.button3.TabIndex = 2;
-            this.button3.Text = "agregar insumos";
+            this.button3.Text = "Control de stock";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
