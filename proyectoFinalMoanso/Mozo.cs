@@ -14,6 +14,8 @@ namespace proyectoFinalMoanso
     public partial class Mozo : Form
     {
         MantenedorCliente mc;
+        bool cliente = false;
+
         public Mozo()
         {
             InitializeComponent();
@@ -48,20 +50,43 @@ namespace proyectoFinalMoanso
 
         private void btnCliente_Click(object sender, EventArgs e)
         {
-            mc = new MantenedorCliente(" "," ");
-            mc.Visible= true;
+            if (cliente == false)
+            {
+                mc = new MantenedorCliente(" ", " ");
+                mc.Visible = true;
+                cliente = true;
+            }
+
         }
 
         private void btnPedido_Click(object sender, EventArgs e)
         {
-            MantenedorPedidos mp = new MantenedorPedidos(mc.retornarNombre());
-            mp.Visible= true;
+            if (cliente == true)
+            {
+                MantenedorPedidos mp = new MantenedorPedidos(mc.retornarNombre());
+                mp.Visible = true;
+                
+            }
+            else
+            {
+                MessageBox.Show("se tiene que registrar al cliente");
+            }
+
+
         }
 
         private void btnPedidos_Click(object sender, EventArgs e)
         {
-            FormasPago fm = new FormasPago(mc.retornarNombre(),mc.retornarApellido());
-            fm.Visible = true;
+            if (cliente == true)
+            {
+                FormasPago fm = new FormasPago(mc.retornarNombre(), mc.retornarApellido());
+                fm.Visible = true;
+                
+            }
+            else
+            {
+                MessageBox.Show("se tiene que registrar al cliente");
+            }
         }
     }
 }
