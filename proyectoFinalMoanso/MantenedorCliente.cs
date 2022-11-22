@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaLogica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using CapaLogica;
+
 
 namespace proyectoFinalMoanso
 {
@@ -52,12 +57,31 @@ namespace proyectoFinalMoanso
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
+            //insertar
+            try
+            {
+                Entcliente c = new Entcliente();
+                c.Nombre = cajaNombre.Text.Trim();
+                c.Apellido= cajaApellido.Text.Trim();
+                c.Telefono = int.Parse(cajaTelefono.Text.Trim());
+                c.Dni = int.Parse(cajaDni.Text.Trim());
+                logCliente.Instancia.InsertaCliente(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+           
+            
+           // listarCliente();
+
             this.nombreCliente = cajaNombre.Text;
             this.apellidoCliente = cajaApellido.Text;
             cajaNombre.Text = string.Empty;
             cajaApellido.Text = string.Empty;
             cajaDni.Text = string.Empty;
             cajaTelefono.Text = string.Empty;
+            this.Close();
         }
     }
 }

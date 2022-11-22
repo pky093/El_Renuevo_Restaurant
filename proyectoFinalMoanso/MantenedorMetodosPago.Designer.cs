@@ -249,7 +249,7 @@
             this.btnComprobantePago.Name = "btnComprobantePago";
             this.btnComprobantePago.Size = new System.Drawing.Size(195, 57);
             this.btnComprobantePago.TabIndex = 4;
-            this.btnComprobantePago.Text = "Comprobante de pago";
+            this.btnComprobantePago.Text = "Generar Comprobante de pago";
             this.btnComprobantePago.UseVisualStyleBackColor = true;
             this.btnComprobantePago.Visible = false;
             this.btnComprobantePago.Click += new System.EventHandler(this.btnComprobantePago_Click);
