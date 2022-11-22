@@ -79,7 +79,7 @@ namespace proyectoFinalMoanso
         {
             if (cliente == true)
             {
-                FormasPago fm = new FormasPago(mc.retornarNombre(), mc.retornarApellido());
+                MantenedorMetodosPago fm = new MantenedorMetodosPago(mc.retornarNombre(), mc.retornarApellido());
                 fm.Visible = true;
                 
             }

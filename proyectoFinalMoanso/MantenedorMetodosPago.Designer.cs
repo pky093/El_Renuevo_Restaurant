@@ -1,6 +1,6 @@
 ﻿namespace proyectoFinalMoanso
 {
-    partial class FormasPago
+    partial class MantenedorMetodosPago
     {
         /// <summary>
         /// Required designer variable.

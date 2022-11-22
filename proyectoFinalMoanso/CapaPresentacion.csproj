@@ -53,11 +53,11 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormasPago.cs">
+    <Compile Include="MantenedorMetodosPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormasPago.Designer.cs">
-      <DependentUpon>FormasPago.cs</DependentUpon>
+    <Compile Include="MantenedorMetodosPago.Designer.cs">
+      <DependentUpon>MantenedorMetodosPago.cs</DependentUpon>
     </Compile>
     <Compile Include="listaClientes.cs">
       <SubType>Form</SubType>
@@ -106,8 +106,8 @@
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormasPago.resx">
-      <DependentUpon>FormasPago.cs</DependentUpon>
+    <EmbeddedResource Include="MantenedorMetodosPago.resx">
+      <DependentUpon>MantenedorMetodosPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listaClientes.resx">
       <DependentUpon>listaClientes.cs</DependentUpon>
