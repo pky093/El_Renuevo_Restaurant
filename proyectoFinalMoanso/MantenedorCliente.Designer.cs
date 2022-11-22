@@ -104,7 +104,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(491, 526);
+            this.button2.Location = new System.Drawing.Point(484, 526);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 65);
             this.button2.TabIndex = 10;
@@ -115,7 +115,7 @@
             // 
             // BtnAgregar
             // 
-            this.BtnAgregar.Location = new System.Drawing.Point(186, 526);
+            this.BtnAgregar.Location = new System.Drawing.Point(196, 526);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(159, 65);
             this.BtnAgregar.TabIndex = 9;
@@ -127,9 +127,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.avatar;
-            this.pictureBox1.Location = new System.Drawing.Point(258, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(287, 32);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(283, 231);
+            this.pictureBox1.Size = new System.Drawing.Size(268, 206);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
