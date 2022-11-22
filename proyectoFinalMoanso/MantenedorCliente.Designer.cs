@@ -32,7 +32,8 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.panelCN = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cajatextoDNI = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelF = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -83,23 +84,35 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.cajatextoDNI);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(416, 114);
+            this.panel1.Location = new System.Drawing.Point(424, 130);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(523, 365);
             this.panel1.TabIndex = 3;
             this.panel1.UseWaitCursor = true;
             this.panel1.Visible = false;
             // 
-            // textBox1
+            // button1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(133, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(353, 32);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.UseWaitCursor = true;
+            this.button1.Location = new System.Drawing.Point(229, 213);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 65);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseWaitCursor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cajatextoDNI
+            // 
+            this.cajatextoDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cajatextoDNI.Location = new System.Drawing.Point(133, 83);
+            this.cajatextoDNI.Name = "cajatextoDNI";
+            this.cajatextoDNI.Size = new System.Drawing.Size(353, 32);
+            this.cajatextoDNI.TabIndex = 1;
+            this.cajatextoDNI.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -125,7 +138,7 @@
             this.panelF.Controls.Add(this.label3);
             this.panelF.Controls.Add(this.cajaDni);
             this.panelF.Controls.Add(this.asdasdsa);
-            this.panelF.Location = new System.Drawing.Point(198, 12);
+            this.panelF.Location = new System.Drawing.Point(175, 12);
             this.panelF.Name = "panelF";
             this.panelF.Size = new System.Drawing.Size(772, 618);
             this.panelF.TabIndex = 4;
@@ -272,7 +285,7 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Panel panelCN;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cajatextoDNI;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelF;
         private System.Windows.Forms.Button button2;
@@ -286,5 +299,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox cajaDni;
         private System.Windows.Forms.Label asdasdsa;
+        private System.Windows.Forms.Button button1;
     }
 }

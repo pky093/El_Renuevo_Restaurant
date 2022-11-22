@@ -39,6 +39,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@Bebida", pi.Bebida);
                 cmd.Parameters.AddWithValue("@Plato", pi.Plato);
                 cmd.Parameters.AddWithValue("@Monto", pi.Monto);
+                cmd.Parameters.AddWithValue("@clienteDNI", pi.clienteDNI);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)

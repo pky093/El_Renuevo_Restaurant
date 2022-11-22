@@ -16,13 +16,14 @@ namespace proyectoFinalMoanso
 {
     public partial class MantenedorCliente : Form
     {
-        public String nombreCliente, apellidoCliente;
+        public String nombreCliente, apellidoCliente,dni;
 
-        public MantenedorCliente(string nombre, string apellidoCliente)
+        public MantenedorCliente(string nombre, string apellidoCliente,string dni)
         {
             InitializeComponent();
             this.nombreCliente = nombre;
             this.apellidoCliente = apellidoCliente;
+            this.dni = dni;
         }
 
         private void btnContinuo_Click(object sender, EventArgs e)
@@ -44,6 +45,16 @@ namespace proyectoFinalMoanso
         public string retornarApellido()
         {
             return this.apellidoCliente;
+        }
+        public string retornarDni()
+        {
+            return this.dni;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.dni = cajatextoDNI.Text;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -76,6 +87,7 @@ namespace proyectoFinalMoanso
 
             this.nombreCliente = cajaNombre.Text;
             this.apellidoCliente = cajaApellido.Text;
+            this.dni = cajaDni.Text;
             cajaNombre.Text = string.Empty;
             cajaApellido.Text = string.Empty;
             cajaDni.Text = string.Empty;

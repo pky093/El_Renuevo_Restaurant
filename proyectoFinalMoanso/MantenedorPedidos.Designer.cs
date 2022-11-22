@@ -28,30 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.labelNombre = new System.Windows.Forms.Label();
+            this.labelDNI = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.labelPlato = new System.Windows.Forms.Label();
             this.labelBebida = new System.Windows.Forms.Label();
             this.labelMonto = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.comida21;
-            this.pictureBox1.Location = new System.Drawing.Point(391, 75);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -124,15 +114,15 @@
             this.comboBox2.TabIndex = 8;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // labelNombre
+            // labelDNI
             // 
-            this.labelNombre.AutoSize = true;
-            this.labelNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
-            this.labelNombre.Location = new System.Drawing.Point(237, 27);
-            this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(118, 42);
-            this.labelNombre.TabIndex = 9;
-            this.labelNombre.Text = "label5";
+            this.labelDNI.AutoSize = true;
+            this.labelDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
+            this.labelDNI.Location = new System.Drawing.Point(237, 27);
+            this.labelDNI.Name = "labelDNI";
+            this.labelDNI.Size = new System.Drawing.Size(118, 42);
+            this.labelDNI.TabIndex = 9;
+            this.labelDNI.Text = "label5";
             // 
             // btnGuardar
             // 
@@ -172,6 +162,16 @@
             this.labelMonto.TabIndex = 13;
             this.labelMonto.Text = "l";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.comida21;
+            this.pictureBox1.Location = new System.Drawing.Point(439, 71);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(191, 142);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // MantenedorPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -181,7 +181,7 @@
             this.Controls.Add(this.labelBebida);
             this.Controls.Add(this.labelPlato);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.labelNombre);
+            this.Controls.Add(this.labelDNI);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
@@ -206,7 +206,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label labelNombre;
+        private System.Windows.Forms.Label labelDNI;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label labelPlato;
         private System.Windows.Forms.Label labelBebida;

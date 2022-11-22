@@ -19,7 +19,7 @@ namespace proyectoFinalMoanso
         public MantenedorPedidos(string nombre)
         {
             InitializeComponent();
-            labelNombre.Text = nombre;
+            labelDNI.Text = nombre;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -67,6 +67,7 @@ namespace proyectoFinalMoanso
                 c.Plato = comboBox1.Text.Trim();
                 c.Bebida = comboBox2.Text.Trim();
                 c.Monto = float.Parse(labelMonto.Text.Trim());
+                c.clienteDNI = int.Parse(labelDNI.Text.Trim());
                 logPedido.Instancia.InsertaPedido(c);
             }
             catch (Exception ex)

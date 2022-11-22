@@ -52,7 +52,7 @@ namespace proyectoFinalMoanso
         {
             if (cliente == false)
             {
-                mc = new MantenedorCliente(" ", " ");
+                mc = new MantenedorCliente(" ", " "," ");
                 mc.Visible = true;
                 cliente = true;
             }
@@ -63,7 +63,7 @@ namespace proyectoFinalMoanso
         {
             if (cliente == true)
             {
-                MantenedorPedidos mp = new MantenedorPedidos(mc.retornarNombre());
+                MantenedorPedidos mp = new MantenedorPedidos(mc.retornarDni());
                 mp.Visible = true;
                 
             }
