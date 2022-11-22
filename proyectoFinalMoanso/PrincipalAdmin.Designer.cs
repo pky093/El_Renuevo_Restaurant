@@ -35,7 +35,7 @@
             // 
             // BtnListarComrpobante
             // 
-            this.BtnListarComrpobante.Location = new System.Drawing.Point(60, 71);
+            this.BtnListarComrpobante.Location = new System.Drawing.Point(51, 71);
             this.BtnListarComrpobante.Name = "BtnListarComrpobante";
             this.BtnListarComrpobante.Size = new System.Drawing.Size(351, 126);
             this.BtnListarComrpobante.TabIndex = 0;

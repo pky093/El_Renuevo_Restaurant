@@ -59,6 +59,12 @@
     <Compile Include="FormasPago.Designer.cs">
       <DependentUpon>FormasPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="listaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listaClientes.Designer.cs">
+      <DependentUpon>listaClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormasPago.resx">
       <DependentUpon>FormasPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listaClientes.resx">
+      <DependentUpon>listaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
