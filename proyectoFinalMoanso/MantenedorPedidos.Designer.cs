@@ -36,13 +36,17 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.labelNombre = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.labelPlato = new System.Windows.Forms.Label();
+            this.labelBebida = new System.Windows.Forms.Label();
+            this.labelMonto = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.comida21;
-            this.pictureBox1.Location = new System.Drawing.Point(490, 74);
+            this.pictureBox1.Location = new System.Drawing.Point(391, 75);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(184, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -53,7 +57,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(314, 257);
+            this.label3.Location = new System.Drawing.Point(242, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 42);
             this.label3.TabIndex = 3;
@@ -64,7 +68,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(314, 341);
+            this.label1.Location = new System.Drawing.Point(210, 332);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 42);
             this.label1.TabIndex = 4;
@@ -75,7 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(314, 417);
+            this.label2.Location = new System.Drawing.Point(264, 414);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 42);
             this.label2.TabIndex = 5;
@@ -95,21 +99,30 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DisplayMember = "1";
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(470, 262);
+            this.comboBox1.Items.AddRange(new object[] {
+            "cabrito",
+            "arroz con pollo"});
+            this.comboBox1.Location = new System.Drawing.Point(373, 258);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(309, 37);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(470, 341);
+            this.comboBox2.Items.AddRange(new object[] {
+            "gaseosas personales",
+            "inka de litro"});
+            this.comboBox2.Location = new System.Drawing.Point(373, 336);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(309, 37);
             this.comboBox2.TabIndex = 8;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // labelNombre
             // 
@@ -121,11 +134,53 @@
             this.labelNombre.TabIndex = 9;
             this.labelNombre.Text = "label5";
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(373, 493);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(251, 49);
+            this.btnGuardar.TabIndex = 10;
+            this.btnGuardar.Text = "guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // labelPlato
+            // 
+            this.labelPlato.AutoSize = true;
+            this.labelPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
+            this.labelPlato.Location = new System.Drawing.Point(735, 262);
+            this.labelPlato.Name = "labelPlato";
+            this.labelPlato.Size = new System.Drawing.Size(0, 42);
+            this.labelPlato.TabIndex = 11;
+            // 
+            // labelBebida
+            // 
+            this.labelBebida.AutoSize = true;
+            this.labelBebida.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
+            this.labelBebida.Location = new System.Drawing.Point(735, 336);
+            this.labelBebida.Name = "labelBebida";
+            this.labelBebida.Size = new System.Drawing.Size(0, 42);
+            this.labelBebida.TabIndex = 12;
+            // 
+            // labelMonto
+            // 
+            this.labelMonto.AutoSize = true;
+            this.labelMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
+            this.labelMonto.Location = new System.Drawing.Point(432, 414);
+            this.labelMonto.Name = "labelMonto";
+            this.labelMonto.Size = new System.Drawing.Size(26, 42);
+            this.labelMonto.TabIndex = 13;
+            this.labelMonto.Text = "l";
+            // 
             // MantenedorPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 585);
+            this.Controls.Add(this.labelMonto);
+            this.Controls.Add(this.labelBebida);
+            this.Controls.Add(this.labelPlato);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -152,5 +207,9 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label labelNombre;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Label labelPlato;
+        private System.Windows.Forms.Label labelBebida;
+        private System.Windows.Forms.Label labelMonto;
     }
 }
