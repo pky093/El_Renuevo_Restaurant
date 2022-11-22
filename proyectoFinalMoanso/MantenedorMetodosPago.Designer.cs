@@ -38,14 +38,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panelTarjeta = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnComprobantePago = new System.Windows.Forms.Button();
             this.panelEfectivo.SuspendLayout();
             this.panelTarjeta.SuspendLayout();
             this.SuspendLayout();
@@ -87,7 +88,6 @@
             this.panelEfectivo.Size = new System.Drawing.Size(496, 337);
             this.panelEfectivo.TabIndex = 2;
             this.panelEfectivo.Visible = false;
-            
             // 
             // labelTotal
             // 
@@ -171,6 +171,24 @@
             this.panelTarjeta.TabIndex = 3;
             this.panelTarjeta.Visible = false;
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(34, 273);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(78, 22);
+            this.textBox4.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(29, 241);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 29);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "cv:";
+            this.label7.UseWaitCursor = true;
+            // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(34, 205);
@@ -225,34 +243,28 @@
             this.label1.Text = "Nombre Completo";
             this.label1.UseWaitCursor = true;
             // 
-            // label7
+            // btnComprobantePago
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(29, 241);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 29);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "cv:";
-            this.label7.UseWaitCursor = true;
+            this.btnComprobantePago.Location = new System.Drawing.Point(450, 537);
+            this.btnComprobantePago.Name = "btnComprobantePago";
+            this.btnComprobantePago.Size = new System.Drawing.Size(195, 57);
+            this.btnComprobantePago.TabIndex = 4;
+            this.btnComprobantePago.Text = "Comprobante de pago";
+            this.btnComprobantePago.UseVisualStyleBackColor = true;
+            this.btnComprobantePago.Visible = false;
+            this.btnComprobantePago.Click += new System.EventHandler(this.btnComprobantePago_Click);
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(34, 273);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(78, 22);
-            this.textBox4.TabIndex = 12;
-            // 
-            // FormasPago
+            // MantenedorMetodosPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1062, 585);
+            this.ClientSize = new System.Drawing.Size(1062, 631);
+            this.Controls.Add(this.btnComprobantePago);
             this.Controls.Add(this.panelTarjeta);
             this.Controls.Add(this.panelEfectivo);
             this.Controls.Add(this.btntarjeta);
             this.Controls.Add(this.btnEfectivo);
-            this.Name = "FormasPago";
+            this.Name = "MantenedorMetodosPago";
             this.Text = "FormasPago";
             this.panelEfectivo.ResumeLayout(false);
             this.panelEfectivo.PerformLayout();
@@ -282,5 +294,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnComprobantePago;
     }
 }

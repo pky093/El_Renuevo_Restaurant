@@ -23,13 +23,21 @@ namespace proyectoFinalMoanso
         {
             btntarjeta.Enabled= false;
             panelEfectivo.Visible=true;
+            btnComprobantePago.Visible = true;
         }
 
         private void btntarjeta_Click(object sender, EventArgs e)
         {
             btnEfectivo.Enabled = false;
             panelTarjeta.Visible=true;
+            btnComprobantePago.Visible = true;
+
         }
 
+        private void btnComprobantePago_Click(object sender, EventArgs e)
+        {
+            ComprantePago mm = new ComprantePago();
+            mm.Visible=true;
+        }
     }
 }
