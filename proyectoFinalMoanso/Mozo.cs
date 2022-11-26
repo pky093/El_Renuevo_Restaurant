@@ -14,6 +14,7 @@ namespace proyectoFinalMoanso
     public partial class Mozo : Form
     {
         MantenedorCliente mc;
+        MantenedorPedidos mp;
         bool cliente = false;
 
         public Mozo()
@@ -63,7 +64,7 @@ namespace proyectoFinalMoanso
         {
             if (cliente == true)
             {
-                MantenedorPedidos mp = new MantenedorPedidos(mc.retornarDni());
+                mp = new MantenedorPedidos(mc.retornarDni());
                 mp.Visible = true;
                 
             }
@@ -79,7 +80,7 @@ namespace proyectoFinalMoanso
         {
             if (cliente == true)
             {
-                MantenedorMetodosPago fm = new MantenedorMetodosPago(mc.retornarNombre(), mc.retornarApellido());
+                MantenedorMetodosPago fm = new MantenedorMetodosPago(mc.retornarNombre(), mc.retornarApellido(),mp.returnPago());
                 fm.Visible = true;
                 
             }

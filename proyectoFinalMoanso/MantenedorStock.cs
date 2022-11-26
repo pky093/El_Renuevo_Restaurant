@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proyectoFinalMoanso
 {
-    public partial class MantenedorInsumos : Form
+    public partial class MantenedorStock : Form
     {
-        public MantenedorInsumos()
+        public MantenedorStock()
         {
             InitializeComponent();
         }

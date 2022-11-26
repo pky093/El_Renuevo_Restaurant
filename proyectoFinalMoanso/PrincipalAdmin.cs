@@ -24,7 +24,7 @@ namespace proyectoFinalMoanso
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MantenedorInsumos m = new MantenedorInsumos();
+            MantenedorStock m = new MantenedorStock();
             m.Visible= true;
         }
     }

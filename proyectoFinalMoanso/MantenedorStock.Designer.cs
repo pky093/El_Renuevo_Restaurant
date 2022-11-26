@@ -1,6 +1,6 @@
 ﻿namespace proyectoFinalMoanso
 {
-    partial class MantenedorInsumos
+    partial class MantenedorStock
     {
         /// <summary>
         /// Required designer variable.
