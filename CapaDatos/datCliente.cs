@@ -36,6 +36,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ClienteID", Cli.ClienteID);
                 cmd.Parameters.AddWithValue("@nombre", Cli.Nombre);
                 cmd.Parameters.AddWithValue("@apellido", Cli.Apellido);
                 cmd.Parameters.AddWithValue("@telefono", Cli.Telefono);

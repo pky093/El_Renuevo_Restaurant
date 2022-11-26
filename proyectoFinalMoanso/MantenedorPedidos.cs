@@ -17,10 +17,11 @@ namespace proyectoFinalMoanso
         float platito;
         float bebidita;
         float total = 0;
-        public MantenedorPedidos(string nombre)
+        public MantenedorPedidos(string idCliente)
         {
             InitializeComponent();
-            labelDNI.Text = nombre;
+            labelDNI.Text = idCliente.ToString();
+            labelFecha.Text = DateTime.Now.ToShortDateString().ToString();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -34,6 +35,7 @@ namespace proyectoFinalMoanso
             {
                 labelPlato.Text = "10.00";
             }
+           
             platito = float.Parse(labelPlato.Text);
             TotalPagar();
         }

@@ -32,6 +32,8 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.panelCN = new System.Windows.Forms.Panel();
             this.panelF = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cajaIDcliente = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -95,6 +97,8 @@
             // 
             // panelF
             // 
+            this.panelF.Controls.Add(this.label2);
+            this.panelF.Controls.Add(this.cajaIDcliente);
             this.panelF.Controls.Add(this.button2);
             this.panelF.Controls.Add(this.BtnAgregar);
             this.panelF.Controls.Add(this.pictureBox1);
@@ -113,6 +117,28 @@
             this.panelF.TabIndex = 4;
             this.panelF.UseWaitCursor = true;
             this.panelF.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(84, 198);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(204, 41);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "ID Cliente:";
+            this.label2.UseWaitCursor = true;
+            // 
+            // cajaIDcliente
+            // 
+            this.cajaIDcliente.Enabled = false;
+            this.cajaIDcliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cajaIDcliente.Location = new System.Drawing.Point(311, 207);
+            this.cajaIDcliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cajaIDcliente.Name = "cajaIDcliente";
+            this.cajaIDcliente.Size = new System.Drawing.Size(353, 32);
+            this.cajaIDcliente.TabIndex = 11;
+            this.cajaIDcliente.UseWaitCursor = true;
             // 
             // button2
             // 
@@ -144,12 +170,11 @@
             this.pictureBox1.Location = new System.Drawing.Point(197, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(311, 235);
+            this.pictureBox1.Size = new System.Drawing.Size(311, 160);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // cajaNombre
             // 
@@ -191,7 +216,6 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Telefono:";
             this.label5.UseWaitCursor = true;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -331,5 +355,7 @@
         private System.Windows.Forms.TextBox cajaDni;
         private System.Windows.Forms.Label asdasdsa;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox cajaIDcliente;
+        private System.Windows.Forms.Label label2;
     }
 }

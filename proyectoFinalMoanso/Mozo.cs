@@ -64,7 +64,7 @@ namespace proyectoFinalMoanso
         {
             if (cliente == true)
             {
-                mp = new MantenedorPedidos(mc.retornarDni());
+                mp = new MantenedorPedidos(mc.retornarIDcliente());
                 mp.Visible = true;
                 
             }

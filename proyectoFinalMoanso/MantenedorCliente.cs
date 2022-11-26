@@ -17,20 +17,33 @@ namespace proyectoFinalMoanso
 {
     public partial class MantenedorCliente : Form
     {
-        public String nombreCliente, apellidoCliente,dni;
+        public String nombreCliente, apellidoCliente,idCliente;
 
-        public MantenedorCliente(string nombre, string apellidoCliente,string dni)
+        public MantenedorCliente(string nombre, string apellidoCliente, string idCliente)
         {
             InitializeComponent();
             this.nombreCliente = nombre;
             this.apellidoCliente = apellidoCliente;
-            this.dni = dni;
+            this.idCliente= idCliente;
+            generarAleatoria();
         }
 
         private void btnContinuo_Click(object sender, EventArgs e)
         {
             panel1.Visible = true;
             panelCN.Visible = false;
+        }
+        public void generarAleatoria()
+        {
+            Random rnd = new Random();
+            string numeritos = "";
+
+            for (int i = 0; i < 4; i++)
+            {
+                int num = rnd.Next(1,10);
+                numeritos= numeritos + num.ToString();
+            }
+            cajaIDcliente.Text = numeritos;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -47,21 +60,20 @@ namespace proyectoFinalMoanso
         {
             return this.apellidoCliente;
         }
-        public string retornarDni()
+        public string retornarIDcliente()
         {
-            return this.dni;
+            return this.idCliente;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.dni = cajatextoDNI.Text;
+            this.idCliente = cajaIDcliente.Text;
             try
             {
                 SqlConnection con = new SqlConnection(@"Data Source=MIGUEL; Initial Catalog = ElRenuevo;Integrated Security=true");
                 con.Open();
                 SqlCommand cmd = new SqlCommand("consultarDni", con);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
-
                 cmd.Parameters.AddWithValue("@dni", cajatextoDNI.Text);
 
                 using (SqlDataReader dr = cmd.ExecuteReader())
@@ -85,15 +97,7 @@ namespace proyectoFinalMoanso
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -109,6 +113,7 @@ namespace proyectoFinalMoanso
             try
             {
                 Entcliente c = new Entcliente();
+                c.ClienteID =int.Parse(cajaIDcliente.Text.Trim());
                 c.Nombre = cajaNombre.Text.Trim();
                 c.Apellido= cajaApellido.Text.Trim();
                 c.Telefono = int.Parse(cajaTelefono.Text.Trim());
@@ -125,7 +130,7 @@ namespace proyectoFinalMoanso
 
             this.nombreCliente = cajaNombre.Text;
             this.apellidoCliente = cajaApellido.Text;
-            this.dni = cajaDni.Text;
+            this.idCliente = cajaIDcliente.Text;
             cajaNombre.Text = string.Empty;
             cajaApellido.Text = string.Empty;
             cajaDni.Text = string.Empty;

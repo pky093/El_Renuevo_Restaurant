@@ -42,6 +42,8 @@
             this.labelMonto = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.labelFecha = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +51,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(243, 254);
+            this.label3.Location = new System.Drawing.Point(242, 223);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 41);
             this.label3.TabIndex = 3;
@@ -60,7 +62,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(211, 332);
+            this.label1.Location = new System.Drawing.Point(211, 282);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 41);
             this.label1.TabIndex = 4;
@@ -71,7 +73,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(240, 416);
+            this.label2.Location = new System.Drawing.Point(240, 432);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 41);
             this.label2.TabIndex = 5;
@@ -84,9 +86,9 @@
             this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(35, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(164, 41);
+            this.label4.Size = new System.Drawing.Size(204, 41);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Nombre:";
+            this.label4.Text = "ID Cliente:";
             this.label4.UseWaitCursor = true;
             // 
             // comboBox1
@@ -98,7 +100,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "cabrito",
             "arroz con pollo"});
-            this.comboBox1.Location = new System.Drawing.Point(373, 258);
+            this.comboBox1.Location = new System.Drawing.Point(373, 227);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(309, 37);
@@ -113,7 +115,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "gaseosas personales",
             "inka de litro"});
-            this.comboBox2.Location = new System.Drawing.Point(373, 336);
+            this.comboBox2.Location = new System.Drawing.Point(373, 289);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(309, 37);
@@ -124,7 +126,7 @@
             // 
             this.labelDNI.AutoSize = true;
             this.labelDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
-            this.labelDNI.Location = new System.Drawing.Point(267, 23);
+            this.labelDNI.Location = new System.Drawing.Point(259, 27);
             this.labelDNI.Name = "labelDNI";
             this.labelDNI.Size = new System.Drawing.Size(118, 42);
             this.labelDNI.TabIndex = 9;
@@ -137,7 +139,7 @@
             this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(137)))), ((int)(((byte)(45)))));
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(373, 473);
+            this.btnGuardar.Location = new System.Drawing.Point(575, 497);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(311, 62);
@@ -150,25 +152,27 @@
             // 
             this.labelPlato.AutoSize = true;
             this.labelPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
-            this.labelPlato.Location = new System.Drawing.Point(735, 262);
+            this.labelPlato.Location = new System.Drawing.Point(718, 227);
             this.labelPlato.Name = "labelPlato";
-            this.labelPlato.Size = new System.Drawing.Size(0, 42);
+            this.labelPlato.Size = new System.Drawing.Size(140, 42);
             this.labelPlato.TabIndex = 11;
+            this.labelPlato.Text = "asdsad";
             // 
             // labelBebida
             // 
             this.labelBebida.AutoSize = true;
             this.labelBebida.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
-            this.labelBebida.Location = new System.Drawing.Point(735, 336);
+            this.labelBebida.Location = new System.Drawing.Point(718, 289);
             this.labelBebida.Name = "labelBebida";
-            this.labelBebida.Size = new System.Drawing.Size(0, 42);
+            this.labelBebida.Size = new System.Drawing.Size(68, 42);
             this.labelBebida.TabIndex = 12;
+            this.labelBebida.Text = "dfs";
             // 
             // labelMonto
             // 
             this.labelMonto.AutoSize = true;
             this.labelMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
-            this.labelMonto.Location = new System.Drawing.Point(425, 414);
+            this.labelMonto.Location = new System.Drawing.Point(448, 430);
             this.labelMonto.Name = "labelMonto";
             this.labelMonto.Size = new System.Drawing.Size(60, 42);
             this.labelMonto.TabIndex = 13;
@@ -177,7 +181,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(399, 78);
+            this.pictureBox1.Location = new System.Drawing.Point(405, 27);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(245, 166);
@@ -189,12 +193,33 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(366, 416);
+            this.label5.Location = new System.Drawing.Point(378, 432);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 41);
             this.label5.TabIndex = 14;
             this.label5.Text = "S/.";
             this.label5.UseWaitCursor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(37, 353);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(321, 41);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "fecha de Registro:";
+            this.label6.UseWaitCursor = true;
+            // 
+            // labelFecha
+            // 
+            this.labelFecha.AutoSize = true;
+            this.labelFecha.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold);
+            this.labelFecha.Location = new System.Drawing.Point(415, 353);
+            this.labelFecha.Name = "labelFecha";
+            this.labelFecha.Size = new System.Drawing.Size(120, 41);
+            this.labelFecha.TabIndex = 16;
+            this.labelFecha.Text = "label7";
             // 
             // MantenedorPedidos
             // 
@@ -202,6 +227,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.ClientSize = new System.Drawing.Size(972, 585);
+            this.Controls.Add(this.labelFecha);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.labelMonto);
             this.Controls.Add(this.labelBebida);
@@ -239,5 +266,7 @@
         private System.Windows.Forms.Label labelBebida;
         private System.Windows.Forms.Label labelMonto;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelFecha;
     }
 }
