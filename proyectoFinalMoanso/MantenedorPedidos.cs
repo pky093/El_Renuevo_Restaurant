@@ -27,7 +27,7 @@ namespace proyectoFinalMoanso
             
             if (comboBox1.Text == "cabrito")
             {
-                labelPlato.Text = "14.00";
+                labelPlato.Text = "14";
             }
             if (comboBox1.Text == "arroz con pollo")
             {
@@ -55,7 +55,7 @@ namespace proyectoFinalMoanso
         private void TotalPagar()
         {
             float total = platito + bebidita;
-            labelMonto.Text = total.ToString();
+            labelMonto.Text = "S/."+total.ToString()+ ".00";
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
