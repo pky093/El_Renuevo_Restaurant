@@ -35,7 +35,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.labelDNI = new System.Windows.Forms.Label();
+            this.labelidCliente = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.labelPlato = new System.Windows.Forms.Label();
             this.labelBebida = new System.Windows.Forms.Label();
@@ -122,15 +122,15 @@
             this.comboBox2.TabIndex = 8;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // labelDNI
+            // labelidCliente
             // 
-            this.labelDNI.AutoSize = true;
-            this.labelDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
-            this.labelDNI.Location = new System.Drawing.Point(259, 27);
-            this.labelDNI.Name = "labelDNI";
-            this.labelDNI.Size = new System.Drawing.Size(118, 42);
-            this.labelDNI.TabIndex = 9;
-            this.labelDNI.Text = "label5";
+            this.labelidCliente.AutoSize = true;
+            this.labelidCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
+            this.labelidCliente.Location = new System.Drawing.Point(259, 27);
+            this.labelidCliente.Name = "labelidCliente";
+            this.labelidCliente.Size = new System.Drawing.Size(118, 42);
+            this.labelidCliente.TabIndex = 9;
+            this.labelidCliente.Text = "label5";
             // 
             // btnGuardar
             // 
@@ -172,9 +172,8 @@
             this.labelMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
             this.labelMonto.Location = new System.Drawing.Point(448, 430);
             this.labelMonto.Name = "labelMonto";
-            this.labelMonto.Size = new System.Drawing.Size(60, 42);
+            this.labelMonto.Size = new System.Drawing.Size(0, 42);
             this.labelMonto.TabIndex = 13;
-            this.labelMonto.Text = "12";
             // 
             // pictureBox1
             // 
@@ -232,7 +231,7 @@
             this.Controls.Add(this.labelBebida);
             this.Controls.Add(this.labelPlato);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.labelDNI);
+            this.Controls.Add(this.labelidCliente);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
@@ -258,7 +257,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label labelDNI;
+        private System.Windows.Forms.Label labelidCliente;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label labelPlato;
         private System.Windows.Forms.Label labelBebida;

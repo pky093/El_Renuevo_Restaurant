@@ -28,7 +28,10 @@ namespace CapaLogica
             datPedido.Instancia.InsertarPedido(pi);
         }
 
-
+        public EntPedido BuscarPedido(string fecha, int id)
+        {
+            return datPedido.Instancia.BuscaridPedido(fecha, id);
+        }
 
     }
 }

@@ -123,7 +123,7 @@
             this.panelF.Controls.Add(this.label3);
             this.panelF.Controls.Add(this.cajaDni);
             this.panelF.Controls.Add(this.asdasdsa);
-            this.panelF.Location = new System.Drawing.Point(99, 500);
+            this.panelF.Location = new System.Drawing.Point(49, 431);
             this.panelF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelF.Name = "panelF";
             this.panelF.Size = new System.Drawing.Size(772, 618);
@@ -447,10 +447,10 @@
             // cajatextoidCLI
             // 
             this.cajatextoidCLI.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cajatextoidCLI.Location = new System.Drawing.Point(204, 42);
+            this.cajatextoidCLI.Location = new System.Drawing.Point(291, 42);
             this.cajatextoidCLI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cajatextoidCLI.Name = "cajatextoidCLI";
-            this.cajatextoidCLI.Size = new System.Drawing.Size(353, 32);
+            this.cajatextoidCLI.Size = new System.Drawing.Size(297, 32);
             this.cajatextoidCLI.TabIndex = 1;
             this.cajatextoidCLI.UseWaitCursor = true;
             // 
@@ -458,11 +458,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(50, 33);
+            this.label1.Location = new System.Drawing.Point(47, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 41);
+            this.label1.Size = new System.Drawing.Size(204, 41);
             this.label1.TabIndex = 0;
-            this.label1.Text = "DNI:";
+            this.label1.Text = "ID Cliente:";
             this.label1.UseWaitCursor = true;
             // 
             // MantenedorCliente

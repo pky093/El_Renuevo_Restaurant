@@ -17,10 +17,11 @@ namespace proyectoFinalMoanso
         float platito;
         float bebidita;
         float total = 0;
+        
         public MantenedorPedidos(string idCliente)
         {
             InitializeComponent();
-            labelDNI.Text = idCliente.ToString();
+            labelidCliente.Text = idCliente.ToString();
             labelFecha.Text = DateTime.Now.ToShortDateString().ToString();
         }
 
@@ -39,11 +40,6 @@ namespace proyectoFinalMoanso
             platito = float.Parse(labelPlato.Text);
             TotalPagar();
         }
-        public void setTotal(float total)
-        {
-            this.total = total;
-        }
-
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -66,6 +62,16 @@ namespace proyectoFinalMoanso
             
 
         }
+        public string retornarFechaPedido()
+        {
+            return labelFecha.Text;
+        }
+
+        public string retornarIDCliente()
+        {
+            return this.labelidCliente.Text;
+        }
+    
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -76,8 +82,8 @@ namespace proyectoFinalMoanso
                 c.Plato = comboBox1.Text.Trim();
                 c.Bebida = comboBox2.Text.Trim();
                 c.Monto = float.Parse(labelMonto.Text.Trim());
-                setTotal(float.Parse(labelMonto.Text.Trim()));
-                c.clienteDNI = int.Parse(labelDNI.Text.Trim());
+                c.idCliente = int.Parse(labelidCliente.Text.Trim());
+                c.FechaPedido = labelFecha.Text;
                 logPedido.Instancia.InsertaPedido(c);
             }
             catch (Exception ex)

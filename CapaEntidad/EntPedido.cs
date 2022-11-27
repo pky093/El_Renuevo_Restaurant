@@ -12,6 +12,7 @@ namespace CapaEntidad
         public string Bebida { get; set; }
         public string Plato { get; set;}
         public float Monto { get; set; }
-        public int clienteDNI { get; set; }
+        public int idCliente { get; set; }
+        public string FechaPedido { get; set; }
     }
 }

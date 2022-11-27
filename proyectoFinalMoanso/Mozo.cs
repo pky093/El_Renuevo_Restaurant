@@ -68,8 +68,19 @@ namespace proyectoFinalMoanso
                
             }
             else {
+
                 mp = new MantenedorPedidos(mc.retornarIDcliente());
-                mp.Visible = true;
+                if (mc.retornarIDcliente() == " ")
+                {
+                    MessageBox.Show("se tiene primero que registrar al cliente");
+                   
+
+                }
+                else
+                {
+                    mp.Visible = true;
+                }
+                
             }
 
 
@@ -85,8 +96,16 @@ namespace proyectoFinalMoanso
             }
             else
             {
-                MantenedorMetodosPago fm = new MantenedorMetodosPago(mc.retornarNombre(), mc.retornarApellido(), mp.returnPago());
-                fm.Visible = true;
+                MantenedorMetodosPago fm = new MantenedorMetodosPago(mc.retornarNombre(), mc.retornarApellido(), mp.returnPago(),mp.retornarFechaPedido(),mc.retornarIDcliente());
+                if (mc.retornarIDcliente() == " ")
+                {
+                    MessageBox.Show("se tiene primero que registrar al cliente");
+
+                }
+                else
+                {
+                    fm.Visible = true;
+                }
             }
                 
         }

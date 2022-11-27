@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -67,31 +68,45 @@ namespace proyectoFinalMoanso
             return this.idCliente;
         }
 
+        public string retonarIDcliente(string id)
+        {
+            return laid.Text;
+        }
+   
         private void btnagregar2_Click(object sender, EventArgs e)
         {
- 
-            xd = logCliente.Instancia.BuscarIDcliente(int.Parse(cajatextoidCLI.Text));
-
-            laid.Text = xd.ClienteID.ToString();
-            if (laid.Text == "0")
+            if(cajatextoidCLI.Text=="")
             {
-                laid.Visible=false;
-                MessageBox.Show("el cliente no existe en la base de datos");
-                this.Close();
+                MessageBox.Show("no puede quedar el espacio en blanco");
             }
-            else {
-                lano.Text = xd.Nombre;
-                laap.Text = xd.Apellido;
-                late.Text = xd.Telefono.ToString();
-                ladni.Text = xd.Dni.ToString();
-                label6.Visible = true;
-                label7.Visible = true;
-                label8.Visible = true;
-                label9.Visible = true;
-                label10.Visible = true;
-                button1.Visible = true;
-            }
+            else
+            {
+                xd = logCliente.Instancia.BuscarIDcliente(int.Parse(cajatextoidCLI.Text));
 
+                laid.Text = xd.ClienteID.ToString();
+                if (laid.Text == "0")
+                {
+                    laid.Visible = false;
+
+                    MessageBox.Show("el cliente no existe en la base de datos");
+                    this.Close();
+                }
+                else
+                {
+                    lano.Text = xd.Nombre;
+                    laap.Text = xd.Apellido;
+                    late.Text = xd.Telefono.ToString();
+                    ladni.Text = xd.Dni.ToString();
+                    label6.Visible = true;
+                    label7.Visible = true;
+                    label8.Visible = true;
+                    label9.Visible = true;
+                    label10.Visible = true;
+                    button1.Visible = true;
+                }
+
+
+            }
 
         }
 

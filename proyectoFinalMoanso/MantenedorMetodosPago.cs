@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaLogica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +14,18 @@ namespace proyectoFinalMoanso
 {
     public partial class MantenedorMetodosPago : Form
     {
-        public MantenedorMetodosPago(string nombre,string apellidos,string pago)
+        EntPedido pe ;
+        public MantenedorMetodosPago(string nombre,string apellidos,string pago,string fecha, string idCliente)
         {
             InitializeComponent();
             this.labelNombre.Text = nombre;
             this.labelApellido.Text = apellidos;
             this.labelTotal.Text = pago;
+            pe = logPedido.Instancia.BuscarPedido(fecha,2889);
+            labelIDpedido.Text = pe.idPedido.ToString();
+            labelTotal.Text = pago;
+
+
         }
 
         private void btnEfectivo_Click(object sender, EventArgs e)
