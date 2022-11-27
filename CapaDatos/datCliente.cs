@@ -12,6 +12,7 @@ namespace CapaDatos
     public class datCliente
     {
         #region sigleton
+        Entcliente Cli = null;
         //Patron Singleton
         // Variable estática para la instancia
         private static readonly datCliente _instancia = new datCliente();
@@ -54,6 +55,42 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return inserta;
+        }
+
+        public Entcliente BuscaridCliente(int idcliente)
+        {
+            SqlCommand cmd = null;
+            Cli = new Entcliente();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("consultarIDCliente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ClienteID", idcliente);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Cli.ClienteID = Convert.ToInt32(dr["ClienteID"]);
+                    Cli.Nombre = dr["nombre"].ToString();
+                    Cli.Apellido = dr["apellido"].ToString();
+                    Cli.Telefono = Convert.ToInt32(dr["Telefono"]);
+                    Cli.Dni = Convert.ToInt32(dr["dni"]);
+
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+
+            }
+
+            return Cli;
+
         }
     }
 }

@@ -47,7 +47,18 @@
             this.asdasdsa = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.cajatextoDNI = new System.Windows.Forms.TextBox();
+            this.ladni = new System.Windows.Forms.Label();
+            this.late = new System.Windows.Forms.Label();
+            this.laap = new System.Windows.Forms.Label();
+            this.lano = new System.Windows.Forms.Label();
+            this.laid = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnagregar2 = new System.Windows.Forms.Button();
+            this.cajatextoidCLI = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelCN.SuspendLayout();
             this.panelF.SuspendLayout();
@@ -57,6 +68,7 @@
             // 
             // btnContinuo
             // 
+            this.btnContinuo.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnContinuo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnContinuo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(137)))), ((int)(((byte)(45)))));
             this.btnContinuo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -76,7 +88,7 @@
             this.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(137)))), ((int)(((byte)(45)))));
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnNuevo.Location = new System.Drawing.Point(49, 215);
+            this.btnNuevo.Location = new System.Drawing.Point(49, 311);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(159, 63);
@@ -87,12 +99,13 @@
             // 
             // panelCN
             // 
+            this.panelCN.Controls.Add(this.panelF);
             this.panelCN.Controls.Add(this.btnContinuo);
             this.panelCN.Controls.Add(this.btnNuevo);
-            this.panelCN.Location = new System.Drawing.Point(83, 114);
+            this.panelCN.Location = new System.Drawing.Point(37, 24);
             this.panelCN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCN.Name = "panelCN";
-            this.panelCN.Size = new System.Drawing.Size(248, 366);
+            this.panelCN.Size = new System.Drawing.Size(264, 513);
             this.panelCN.TabIndex = 2;
             // 
             // panelF
@@ -110,7 +123,7 @@
             this.panelF.Controls.Add(this.label3);
             this.panelF.Controls.Add(this.cajaDni);
             this.panelF.Controls.Add(this.asdasdsa);
-            this.panelF.Location = new System.Drawing.Point(166, 11);
+            this.panelF.Location = new System.Drawing.Point(99, 500);
             this.panelF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelF.Name = "panelF";
             this.panelF.Size = new System.Drawing.Size(772, 618);
@@ -154,6 +167,7 @@
             // 
             // BtnAgregar
             // 
+            this.BtnAgregar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnAgregar.Location = new System.Drawing.Point(196, 526);
             this.BtnAgregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnAgregar.Name = "BtnAgregar";
@@ -263,12 +277,23 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.cajatextoDNI);
+            this.panel1.Controls.Add(this.ladni);
+            this.panel1.Controls.Add(this.late);
+            this.panel1.Controls.Add(this.laap);
+            this.panel1.Controls.Add(this.lano);
+            this.panel1.Controls.Add(this.laid);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.btnagregar2);
+            this.panel1.Controls.Add(this.cajatextoidCLI);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(347, 114);
+            this.panel1.Location = new System.Drawing.Point(351, 23);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(620, 366);
+            this.panel1.Size = new System.Drawing.Size(620, 541);
             this.panel1.TabIndex = 3;
             this.panel1.UseWaitCursor = true;
             this.panel1.Visible = false;
@@ -280,31 +305,160 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(137)))), ((int)(((byte)(45)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("PMingLiU-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(216, 159);
+            this.button1.Location = new System.Drawing.Point(428, 468);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 90);
-            this.button1.TabIndex = 10;
+            this.button1.Size = new System.Drawing.Size(179, 61);
+            this.button1.TabIndex = 21;
             this.button1.Text = "AGREGAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.UseWaitCursor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cajatextoDNI
+            // ladni
             // 
-            this.cajatextoDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cajatextoDNI.Location = new System.Drawing.Point(180, 82);
-            this.cajatextoDNI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cajatextoDNI.Name = "cajatextoDNI";
-            this.cajatextoDNI.Size = new System.Drawing.Size(353, 32);
-            this.cajatextoDNI.TabIndex = 1;
-            this.cajatextoDNI.UseWaitCursor = true;
+            this.ladni.AutoSize = true;
+            this.ladni.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ladni.Location = new System.Drawing.Point(285, 446);
+            this.ladni.Name = "ladni";
+            this.ladni.Size = new System.Drawing.Size(0, 35);
+            this.ladni.TabIndex = 20;
+            this.ladni.UseWaitCursor = true;
+            // 
+            // late
+            // 
+            this.late.AutoSize = true;
+            this.late.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.late.Location = new System.Drawing.Point(285, 395);
+            this.late.Name = "late";
+            this.late.Size = new System.Drawing.Size(0, 35);
+            this.late.TabIndex = 19;
+            this.late.UseWaitCursor = true;
+            // 
+            // laap
+            // 
+            this.laap.AutoSize = true;
+            this.laap.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.laap.Location = new System.Drawing.Point(285, 341);
+            this.laap.Name = "laap";
+            this.laap.Size = new System.Drawing.Size(0, 35);
+            this.laap.TabIndex = 18;
+            this.laap.UseWaitCursor = true;
+            // 
+            // lano
+            // 
+            this.lano.AutoSize = true;
+            this.lano.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lano.Location = new System.Drawing.Point(285, 289);
+            this.lano.Name = "lano";
+            this.lano.Size = new System.Drawing.Size(0, 35);
+            this.lano.TabIndex = 17;
+            this.lano.UseWaitCursor = true;
+            // 
+            // laid
+            // 
+            this.laid.AutoSize = true;
+            this.laid.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.laid.Location = new System.Drawing.Point(285, 238);
+            this.laid.Name = "laid";
+            this.laid.Size = new System.Drawing.Size(0, 35);
+            this.laid.TabIndex = 16;
+            this.laid.UseWaitCursor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(124, 446);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(78, 35);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Dni:";
+            this.label10.UseWaitCursor = true;
+            this.label10.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(48, 395);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(154, 35);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Telefono:";
+            this.label9.UseWaitCursor = true;
+            this.label9.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(36, 341);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(164, 35);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Apellidos:";
+            this.label8.UseWaitCursor = true;
+            this.label8.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(59, 289);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(141, 35);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Nombre:";
+            this.label7.UseWaitCursor = true;
+            this.label7.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(26, 238);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(174, 35);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "ID Cliente:";
+            this.label6.UseWaitCursor = true;
+            this.label6.Visible = false;
+            // 
+            // btnagregar2
+            // 
+            this.btnagregar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(244)))), ((int)(((byte)(230)))));
+            this.btnagregar2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnagregar2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnagregar2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(137)))), ((int)(((byte)(45)))));
+            this.btnagregar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnagregar2.Font = new System.Drawing.Font("PMingLiU-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnagregar2.Location = new System.Drawing.Point(153, 111);
+            this.btnagregar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnagregar2.Name = "btnagregar2";
+            this.btnagregar2.Size = new System.Drawing.Size(251, 90);
+            this.btnagregar2.TabIndex = 10;
+            this.btnagregar2.Text = "BUSCAR";
+            this.btnagregar2.UseVisualStyleBackColor = false;
+            this.btnagregar2.UseWaitCursor = true;
+            this.btnagregar2.Click += new System.EventHandler(this.btnagregar2_Click);
+            // 
+            // cajatextoidCLI
+            // 
+            this.cajatextoidCLI.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cajatextoidCLI.Location = new System.Drawing.Point(204, 42);
+            this.cajatextoidCLI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cajatextoidCLI.Name = "cajatextoidCLI";
+            this.cajatextoidCLI.Size = new System.Drawing.Size(353, 32);
+            this.cajatextoidCLI.TabIndex = 1;
+            this.cajatextoidCLI.UseWaitCursor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 23.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(43, 73);
+            this.label1.Location = new System.Drawing.Point(50, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 41);
             this.label1.TabIndex = 0;
@@ -317,7 +471,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.ClientSize = new System.Drawing.Size(1028, 667);
-            this.Controls.Add(this.panelF);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelCN);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -340,7 +493,7 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Panel panelCN;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox cajatextoDNI;
+        private System.Windows.Forms.TextBox cajatextoidCLI;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelF;
         private System.Windows.Forms.Button button2;
@@ -354,8 +507,19 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox cajaDni;
         private System.Windows.Forms.Label asdasdsa;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnagregar2;
         private System.Windows.Forms.TextBox cajaIDcliente;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label ladni;
+        private System.Windows.Forms.Label late;
+        private System.Windows.Forms.Label laap;
+        private System.Windows.Forms.Label lano;
+        private System.Windows.Forms.Label laid;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
     }
 }

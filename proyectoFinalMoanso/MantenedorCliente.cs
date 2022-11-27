@@ -18,6 +18,7 @@ namespace proyectoFinalMoanso
     public partial class MantenedorCliente : Form
     {
         public String nombreCliente, apellidoCliente,idCliente;
+        Entcliente xd=null;
 
         public MantenedorCliente(string nombre, string apellidoCliente, string idCliente)
         {
@@ -27,6 +28,7 @@ namespace proyectoFinalMoanso
             this.idCliente= idCliente;
             generarAleatoria();
         }
+
 
         private void btnContinuo_Click(object sender, EventArgs e)
         {
@@ -65,42 +67,47 @@ namespace proyectoFinalMoanso
             return this.idCliente;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnagregar2_Click(object sender, EventArgs e)
         {
-            this.idCliente = cajaIDcliente.Text;
-            try
-            {
-                SqlConnection con = new SqlConnection(@"Data Source=MIGUEL; Initial Catalog = ElRenuevo;Integrated Security=true");
-                con.Open();
-                SqlCommand cmd = new SqlCommand("consultarDni", con);
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@dni", cajatextoDNI.Text);
+ 
+            xd = logCliente.Instancia.BuscarIDcliente(int.Parse(cajatextoidCLI.Text));
 
-                using (SqlDataReader dr = cmd.ExecuteReader())
-                {
-                    if (dr.HasRows)
-                    {
-                        MessageBox.Show("puede continuar con la ventana pedido");
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("EL DNI  NO EXISTE");
-                    }
-                }
-                con.Close();
-            }
-            catch (Exception ex)
+            laid.Text = xd.ClienteID.ToString();
+            if (laid.Text == "0")
             {
-                MessageBox.Show(ex.Message);
+                laid.Visible=false;
+                MessageBox.Show("el cliente no existe en la base de datos");
+                this.Close();
             }
+            else {
+                lano.Text = xd.Nombre;
+                laap.Text = xd.Apellido;
+                late.Text = xd.Telefono.ToString();
+                ladni.Text = xd.Dni.ToString();
+                label6.Visible = true;
+                label7.Visible = true;
+                label8.Visible = true;
+                label9.Visible = true;
+                label10.Visible = true;
+                button1.Visible = true;
+            }
+
 
         }
 
-     
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            this.idCliente = laid.Text;
+            this.nombreCliente = lano.Text;
+            this.apellidoCliente = laap.Text;
+            this.Close();
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
+            cajaIDcliente.Text =string.Empty;
             cajaNombre.Text = string.Empty;
             cajaApellido.Text = string.Empty;
             cajaDni.Text = string.Empty;    

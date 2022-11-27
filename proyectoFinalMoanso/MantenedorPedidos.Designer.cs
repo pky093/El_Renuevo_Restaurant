@@ -154,9 +154,8 @@
             this.labelPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
             this.labelPlato.Location = new System.Drawing.Point(718, 227);
             this.labelPlato.Name = "labelPlato";
-            this.labelPlato.Size = new System.Drawing.Size(140, 42);
+            this.labelPlato.Size = new System.Drawing.Size(0, 42);
             this.labelPlato.TabIndex = 11;
-            this.labelPlato.Text = "asdsad";
             // 
             // labelBebida
             // 
@@ -164,9 +163,8 @@
             this.labelBebida.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
             this.labelBebida.Location = new System.Drawing.Point(718, 289);
             this.labelBebida.Name = "labelBebida";
-            this.labelBebida.Size = new System.Drawing.Size(68, 42);
+            this.labelBebida.Size = new System.Drawing.Size(0, 42);
             this.labelBebida.TabIndex = 12;
-            this.labelBebida.Text = "dfs";
             // 
             // labelMonto
             // 

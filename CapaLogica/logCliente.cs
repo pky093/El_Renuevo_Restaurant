@@ -28,5 +28,10 @@ namespace CapaLogica
             datCliente.Instancia.InsertarCliente(Cli);
         }
 
+        public Entcliente BuscarIDcliente(int idcliente)
+        {
+            return datCliente.Instancia.BuscaridCliente(idcliente);
+        }
+
     }
 }

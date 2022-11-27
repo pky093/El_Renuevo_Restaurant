@@ -184,7 +184,7 @@
             // 
             this.pictureBox5.Image = global::proyectoFinalMoanso.Properties.Resources._2048745;
             this.pictureBox5.Location = new System.Drawing.Point(392, 266);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(199, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -195,7 +195,7 @@
             // 
             this.pictureBox4.Image = global::proyectoFinalMoanso.Properties.Resources.descarga__1_;
             this.pictureBox4.Location = new System.Drawing.Point(655, 50);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(148, 87);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +206,7 @@
             // 
             this.pictureBox3.Image = global::proyectoFinalMoanso.Properties.Resources.images__2_;
             this.pictureBox3.Location = new System.Drawing.Point(211, 50);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(112, 87);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -328,7 +328,6 @@
         private System.Windows.Forms.Label horaMozo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnPedido;
         private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -337,5 +336,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnPedido;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaLogica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,13 +10,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace proyectoFinalMoanso
 {
     public partial class Mozo : Form
     {
         MantenedorCliente mc;
         MantenedorPedidos mp;
-        bool cliente = false;
+       
 
         public Mozo()
         {
@@ -51,26 +53,23 @@ namespace proyectoFinalMoanso
 
         private void btnCliente_Click(object sender, EventArgs e)
         {
-            if (cliente == false)
-            {
+
                 mc = new MantenedorCliente(" ", " "," ");
                 mc.Visible = true;
-                cliente = true;
-            }
 
         }
 
         private void btnPedido_Click(object sender, EventArgs e)
         {
-            if (cliente == true)
+            
+            if (mc == null)
             {
+                MessageBox.Show("primero debe registrar al cliente");
+               
+            }
+            else {
                 mp = new MantenedorPedidos(mc.retornarIDcliente());
                 mp.Visible = true;
-                
-            }
-            else
-            {
-                MessageBox.Show("se tiene que registrar al cliente");
             }
 
 
@@ -78,16 +77,18 @@ namespace proyectoFinalMoanso
 
         private void btnPedidos_Click(object sender, EventArgs e)
         {
-            if (cliente == true)
+
+            if (mp == null)
             {
-                MantenedorMetodosPago fm = new MantenedorMetodosPago(mc.retornarNombre(), mc.retornarApellido(),mp.returnPago());
-                fm.Visible = true;
+                MessageBox.Show("primero debe registrar al cliente");
                 
             }
             else
             {
-                MessageBox.Show("se tiene que registrar al cliente");
+                MantenedorMetodosPago fm = new MantenedorMetodosPago(mc.retornarNombre(), mc.retornarApellido(), mp.returnPago());
+                fm.Visible = true;
             }
+                
         }
     }
 }
