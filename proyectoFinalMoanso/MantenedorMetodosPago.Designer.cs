@@ -31,6 +31,9 @@
             this.btnEfectivo = new System.Windows.Forms.Button();
             this.btntarjeta = new System.Windows.Forms.Button();
             this.panelEfectivo = new System.Windows.Forms.Panel();
+            this.labelIDpedido = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.labelApellido = new System.Windows.Forms.Label();
@@ -47,11 +50,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnComprobantePago = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.labelIDpedido = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panelEfectivo.SuspendLayout();
             this.panelTarjeta.SuspendLayout();
             this.SuspendLayout();
@@ -92,8 +90,6 @@
             // 
             // panelEfectivo
             // 
-            this.panelEfectivo.Controls.Add(this.label11);
-            this.panelEfectivo.Controls.Add(this.label10);
             this.panelEfectivo.Controls.Add(this.labelIDpedido);
             this.panelEfectivo.Controls.Add(this.label9);
             this.panelEfectivo.Controls.Add(this.label8);
@@ -109,6 +105,39 @@
             this.panelEfectivo.Size = new System.Drawing.Size(496, 337);
             this.panelEfectivo.TabIndex = 2;
             this.panelEfectivo.Visible = false;
+            // 
+            // labelIDpedido
+            // 
+            this.labelIDpedido.AutoSize = true;
+            this.labelIDpedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIDpedido.Location = new System.Drawing.Point(245, 88);
+            this.labelIDpedido.Name = "labelIDpedido";
+            this.labelIDpedido.Size = new System.Drawing.Size(33, 36);
+            this.labelIDpedido.TabIndex = 12;
+            this.labelIDpedido.Text = "n";
+            this.labelIDpedido.UseWaitCursor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Sitka Subheading", 15.75F);
+            this.label9.Location = new System.Drawing.Point(44, 85);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(140, 39);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "ID Pedido:";
+            this.label9.UseWaitCursor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(201, 243);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(49, 36);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "s/.";
+            this.label8.UseWaitCursor = true;
             // 
             // labelTotal
             // 
@@ -285,57 +314,6 @@
             this.btnComprobantePago.Visible = false;
             this.btnComprobantePago.Click += new System.EventHandler(this.btnComprobantePago_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(201, 243);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 36);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "s/.";
-            this.label8.UseWaitCursor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Sitka Subheading", 15.75F);
-            this.label9.Location = new System.Drawing.Point(44, 85);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 39);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "ID Pedido:";
-            this.label9.UseWaitCursor = true;
-            // 
-            // labelIDpedido
-            // 
-            this.labelIDpedido.AutoSize = true;
-            this.labelIDpedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDpedido.Location = new System.Drawing.Point(245, 88);
-            this.labelIDpedido.Name = "labelIDpedido";
-            this.labelIDpedido.Size = new System.Drawing.Size(33, 36);
-            this.labelIDpedido.TabIndex = 12;
-            this.labelIDpedido.Text = "n";
-            this.labelIDpedido.UseWaitCursor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(379, 85);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 16);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "label10";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(382, 125);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 16);
-            this.label11.TabIndex = 14;
-            this.label11.Text = "label11";
-            // 
             // MantenedorMetodosPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -382,7 +360,5 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label labelIDpedido;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
     }
 }

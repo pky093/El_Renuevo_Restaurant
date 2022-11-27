@@ -82,6 +82,7 @@ namespace proyectoFinalMoanso
                 c.Plato = comboBox1.Text.Trim();
                 c.Bebida = comboBox2.Text.Trim();
                 c.Monto = float.Parse(labelMonto.Text.Trim());
+                this.total = c.Monto;
                 c.idCliente = int.Parse(labelidCliente.Text.Trim());
                 c.FechaPedido = labelFecha.Text;
                 logPedido.Instancia.InsertaPedido(c);
@@ -97,7 +98,7 @@ namespace proyectoFinalMoanso
 
         public string returnPago()
         {
-            return this.total.ToString();
+            return total.ToString();
         }
     }
 }

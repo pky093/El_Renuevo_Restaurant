@@ -17,7 +17,9 @@ namespace proyectoFinalMoanso
     {
         MantenedorCliente mc;
         MantenedorPedidos mp;
-       
+        MantenedorMetodosPago fm;
+
+
 
         public Mozo()
         {
@@ -96,7 +98,7 @@ namespace proyectoFinalMoanso
             }
             else
             {
-                MantenedorMetodosPago fm = new MantenedorMetodosPago(mc.retornarNombre(), mc.retornarApellido(), mp.returnPago(),mp.retornarFechaPedido(),mc.retornarIDcliente());
+                fm = new MantenedorMetodosPago(mc.retornarNombre(), mc.retornarApellido(), mp.returnPago(),mp.retornarFechaPedido(),mc.retornarIDcliente());
                 if (mc.retornarIDcliente() == " ")
                 {
                     MessageBox.Show("se tiene primero que registrar al cliente");
