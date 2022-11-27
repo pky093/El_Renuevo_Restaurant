@@ -70,7 +70,7 @@ namespace proyectoFinalMoanso
 
         public string retonarIDcliente(string id)
         {
-            return laid.Text;
+            return this.laid.Text;
         }
    
         private void btnagregar2_Click(object sender, EventArgs e)
@@ -146,10 +146,10 @@ namespace proyectoFinalMoanso
             {
                 MessageBox.Show("Error.." + ex);
             }
-           
-            
-           // listarCliente();
 
+
+            // listarCliente();
+            this.idCliente = cajaIDcliente.Text;
             this.nombreCliente = cajaNombre.Text;
             this.apellidoCliente = cajaApellido.Text;
             this.idCliente = cajaIDcliente.Text;

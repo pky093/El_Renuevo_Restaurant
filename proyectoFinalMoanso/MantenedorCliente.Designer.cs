@@ -99,7 +99,6 @@
             // 
             // panelCN
             // 
-            this.panelCN.Controls.Add(this.panelF);
             this.panelCN.Controls.Add(this.btnContinuo);
             this.panelCN.Controls.Add(this.btnNuevo);
             this.panelCN.Location = new System.Drawing.Point(37, 24);
@@ -123,7 +122,7 @@
             this.panelF.Controls.Add(this.label3);
             this.panelF.Controls.Add(this.cajaDni);
             this.panelF.Controls.Add(this.asdasdsa);
-            this.panelF.Location = new System.Drawing.Point(49, 431);
+            this.panelF.Location = new System.Drawing.Point(155, 11);
             this.panelF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelF.Name = "panelF";
             this.panelF.Size = new System.Drawing.Size(772, 618);
@@ -471,6 +470,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.ClientSize = new System.Drawing.Size(1028, 667);
+            this.Controls.Add(this.panelF);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelCN);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -21,11 +21,8 @@ namespace proyectoFinalMoanso
             this.labelNombre.Text = nombre;
             this.labelApellido.Text = apellidos;
             this.labelTotal.Text = pago;
-            //pe = logPedido.Instancia.BuscarPedido(fecha,2889);
-           // labelIDpedido.Text = pe.idPedido.ToString();
-            
-
-
+            pe = logPedido.Instancia.BuscarPedido(fecha,int.Parse(idCliente));
+            labelIDpedido.Text = pe.idPedido.ToString();
         }
 
         private void btnEfectivo_Click(object sender, EventArgs e)
