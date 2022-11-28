@@ -11,21 +11,17 @@ using System.Windows.Forms;
 
 namespace proyectoFinalMoanso
 {
-    public partial class listaClientes : Form
+    public partial class ListaComprobantes : Form
     {
-        public listaClientes()
+        public ListaComprobantes()
         {
             InitializeComponent();
-            Listar();
+            listar();
+        }
+        public void listar()
+        {
+            dgv.DataSource = logComprobantePago.Instancia.ListarComprobantes();
         }
 
-        public void Listar()
-        {
-            dgv.DataSource = logCliente.Instancia.ListarPersonas();
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

@@ -31,9 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrador));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btn = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Ingresar = new System.Windows.Forms.Button();
@@ -44,9 +42,7 @@
             this.cajausuario = new System.Windows.Forms.TextBox();
             this.usuario = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,9 +52,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(167)))), ((int)(((byte)(18)))));
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Controls.Add(this.btn);
-            this.panel1.Controls.Add(this.btnMaximizar);
             this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -71,24 +65,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(236, 2);
+            this.label3.Location = new System.Drawing.Point(285, 5);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 25);
+            this.label3.Size = new System.Drawing.Size(145, 25);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Encargado de Insumos";
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Image = global::proyectoFinalMoanso.Properties.Resources.grande1;
-            this.btnMinimizar.Location = new System.Drawing.Point(475, 3);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(48, 24);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 5;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Visible = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            this.label3.Text = "Administrador";
             // 
             // btn
             // 
@@ -102,19 +83,6 @@
             this.btn.TabStop = false;
             this.btn.Visible = false;
             this.btn.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.Image = global::proyectoFinalMoanso.Properties.Resources.maximizar;
-            this.btnMaximizar.Location = new System.Drawing.Point(421, 3);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(48, 24);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 6;
-            this.btnMaximizar.TabStop = false;
-            this.btnMaximizar.Visible = false;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnCerrar
             // 
@@ -143,6 +111,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(697, 498);
             this.panel2.TabIndex = 2;
+            
             // 
             // Ingresar
             // 
@@ -226,9 +195,7 @@
             this.Text = "Administrador";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -242,8 +209,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btn;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox cajausuario;
         private System.Windows.Forms.Label usuario;

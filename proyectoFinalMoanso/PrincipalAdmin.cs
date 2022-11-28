@@ -19,13 +19,21 @@ namespace proyectoFinalMoanso
 
         private void BtnListarComrpobante_Click(object sender, EventArgs e)
         {
-
+            listaClientes lc = new listaClientes();
+            lc.Visible = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             MantenedorStock m = new MantenedorStock();
             m.Visible= true;
+        }
+
+        private void btnListarComprobante_Click(object sender, EventArgs e)
+        {
+            ListaComprobantes lc = new ListaComprobantes();
+            lc.Visible= true;
+            
         }
     }
 }

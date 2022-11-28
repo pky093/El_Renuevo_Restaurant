@@ -55,5 +55,42 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return inserta;
         }
+
+        public List<EntComprobantePago> ListarComprobantePago()
+        {
+            SqlCommand cmd = null;
+            List<EntComprobantePago> lista = new List<EntComprobantePago>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spListaComprobante", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntComprobantePago Cli = new EntComprobantePago();
+                    Cli.idComprobantePago = Convert.ToInt32(dr["idComprobantePago"]);
+                    Cli.idCliente = Convert.ToInt32(dr["idCliente"]);
+                    Cli.idPedido = Convert.ToInt32(dr["idPedido"]);
+                    Cli.Monto = float.Parse(dr["Monto"].ToString());
+                    Cli.fecha = dr["Fecha"].ToString();
+                    Cli.MetodoPago = dr["MetodoPago"].ToString();
+                    lista.Add(Cli);
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
+        }
+
+
     }
 }

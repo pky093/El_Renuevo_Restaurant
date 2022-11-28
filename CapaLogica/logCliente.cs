@@ -33,5 +33,10 @@ namespace CapaLogica
             return datCliente.Instancia.BuscaridCliente(idcliente);
         }
 
+        public List<Entcliente> ListarPersonas()
+        {
+            return datCliente.Instancia.ListarPersona();
+        }
+
     }
 }

@@ -40,7 +40,7 @@
             this.BtnListarComrpobante.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(137)))), ((int)(((byte)(45)))));
             this.BtnListarComrpobante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnListarComrpobante.Font = new System.Drawing.Font("Microsoft Uighur", 36F);
-            this.BtnListarComrpobante.Location = new System.Drawing.Point(523, 73);
+            this.BtnListarComrpobante.Location = new System.Drawing.Point(509, 73);
             this.BtnListarComrpobante.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnListarComrpobante.Name = "BtnListarComrpobante";
             this.BtnListarComrpobante.Size = new System.Drawing.Size(381, 126);
@@ -62,6 +62,7 @@
             this.btnListarComprobante.TabIndex = 1;
             this.btnListarComprobante.Text = "Listas de Comprobantes";
             this.btnListarComprobante.UseVisualStyleBackColor = true;
+            this.btnListarComprobante.Click += new System.EventHandler(this.btnListarComprobante_Click);
             // 
             // button3
             // 
@@ -69,10 +70,10 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(137)))), ((int)(((byte)(45)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Uighur", 36F);
-            this.button3.Location = new System.Drawing.Point(237, 345);
+            this.button3.Location = new System.Drawing.Point(260, 313);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(432, 100);
+            this.button3.Size = new System.Drawing.Size(432, 115);
             this.button3.TabIndex = 2;
             this.button3.Text = "Control de stock";
             this.button3.UseVisualStyleBackColor = true;

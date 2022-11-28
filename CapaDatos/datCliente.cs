@@ -92,6 +92,40 @@ namespace CapaDatos
             return Cli;
 
         }
+
+        public List<Entcliente> ListarPersona()
+        {
+            SqlCommand cmd = null;
+            List<Entcliente> lista = new List<Entcliente>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spListaClientes", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Entcliente Cli = new Entcliente();
+                    Cli.ClienteID = Convert.ToInt32(dr["ClienteID"]);
+                    Cli.Nombre = dr["nombre"].ToString();
+                    Cli.Apellido = dr["apellido"].ToString();
+                    Cli.Telefono = Convert.ToInt32(dr["Telefono"]);
+                    Cli.Dni = Convert.ToInt32(dr["dni"]);
+                    lista.Add(Cli);
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
+        }
     }
 }
 

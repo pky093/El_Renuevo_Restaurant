@@ -27,6 +27,11 @@ namespace CapaLogica
         {
             DatComprobantePago.Instancia.InsertarComprobante(Cli);
         }
+        public List<EntComprobantePago> ListarComprobantes()
+        {
+            return DatComprobantePago.Instancia.ListarComprobantePago();
+        }
+
     }
 
 

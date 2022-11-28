@@ -34,24 +34,12 @@ namespace proyectoFinalMoanso
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMinimizar.Visible=false;
-            btnMaximizar.Visible = true;
-        }
 
         private void btn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnMaximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnMinimizar.Visible = true;
-            btnMaximizar.Visible = false;
-        }
 
         private void checkcontra_CheckedChanged(object sender, EventArgs e)
         {
@@ -71,6 +59,7 @@ namespace proyectoFinalMoanso
             {
                 PrincipalAdmin pa = new PrincipalAdmin();
                 pa.Visible= true;
+                Dispose();
             }
             else
             {
