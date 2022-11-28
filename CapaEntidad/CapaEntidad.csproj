@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entcliente.cs" />
+    <Compile Include="EntComprobantePago.cs" />
     <Compile Include="EntPedido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

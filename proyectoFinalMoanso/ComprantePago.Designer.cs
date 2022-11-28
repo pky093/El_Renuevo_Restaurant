@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Lmp = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,12 +141,22 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.logotipo;
-            this.pictureBox1.Location = new System.Drawing.Point(710, 49);
+            this.pictureBox1.Location = new System.Drawing.Point(705, 49);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(371, 377);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnRC
+            // 
+            this.btnRC.Location = new System.Drawing.Point(783, 447);
+            this.btnRC.Name = "btnRC";
+            this.btnRC.Size = new System.Drawing.Size(249, 51);
+            this.btnRC.TabIndex = 11;
+            this.btnRC.Text = "Registrar Comprobante";
+            this.btnRC.UseVisualStyleBackColor = true;
+            this.btnRC.Click += new System.EventHandler(this.btnRC_Click);
             // 
             // ComprantePago
             // 
@@ -153,6 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.ClientSize = new System.Drawing.Size(1149, 526);
+            this.Controls.Add(this.btnRC);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Lmp);
             this.Controls.Add(this.label2);
@@ -186,5 +198,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Lmp;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnRC;
     }
 }

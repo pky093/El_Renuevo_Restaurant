@@ -64,6 +64,7 @@ namespace proyectoFinalMoanso
            
             ComprantePago mm = new ComprantePago(this.idcliente,this.idpedido,this.monto,this.fecha1,this.tipoPago);
             mm.Visible=true;
+            Dispose();
         }
     }
 }

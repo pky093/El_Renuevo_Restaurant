@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaLogica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,26 @@ namespace proyectoFinalMoanso
             lmonto.Text = monto.ToString();
             ltFecha.Text = fecha;
             Lmp.Text = tipoPago;
+        }
+
+        private void btnRC_Click(object sender, EventArgs e)
+        {
+            //insertar
+            try
+            {
+                EntComprobantePago c = new EntComprobantePago();
+                c.idCliente = int.Parse(lidcli.Text.Trim());
+                c.idPedido = int.Parse(ldpe.Text.Trim());
+                c.Monto = float.Parse(lmonto.Text.Trim());
+                c.fecha = ltFecha.Text;
+                c.MetodoPago = Lmp.Text.Trim();
+                logComprobantePago.Instancia.InsertaComprobantePago(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            Dispose();
         }
     }
 }
