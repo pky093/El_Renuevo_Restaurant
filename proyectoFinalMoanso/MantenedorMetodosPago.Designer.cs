@@ -70,6 +70,7 @@
             this.btnEfectivo.Text = "         Efectivo";
             this.btnEfectivo.UseVisualStyleBackColor = true;
             this.btnEfectivo.Click += new System.EventHandler(this.btnEfectivo_Click);
+            this.btnEfectivo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnEfectivo_MouseClick);
             // 
             // btntarjeta
             // 
@@ -87,6 +88,7 @@
             this.btntarjeta.Text = "          Tarjeta";
             this.btntarjeta.UseVisualStyleBackColor = true;
             this.btntarjeta.Click += new System.EventHandler(this.btntarjeta_Click);
+            this.btntarjeta.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btntarjeta_MouseClick);
             // 
             // panelEfectivo
             // 
@@ -319,7 +321,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.ClientSize = new System.Drawing.Size(1061, 631);
+            this.ClientSize = new System.Drawing.Size(1089, 631);
             this.Controls.Add(this.btnComprobantePago);
             this.Controls.Add(this.panelTarjeta);
             this.Controls.Add(this.panelEfectivo);

@@ -33,8 +33,8 @@ namespace proyectoFinalMoanso
 
         private void btnContinuo_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-            panelCN.Visible = false;
+            panelCN.Enabled = false;
+            panel1.Visible= true;
         }
         public void generarAleatoria()
         {
@@ -52,7 +52,8 @@ namespace proyectoFinalMoanso
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             panelF.Visible = true;
-            panelCN.Visible = false;
+            panel1.Visible = false;
+            
         }
         public string retornarNombre()
         {

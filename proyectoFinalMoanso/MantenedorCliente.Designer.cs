@@ -101,10 +101,10 @@
             // 
             this.panelCN.Controls.Add(this.btnContinuo);
             this.panelCN.Controls.Add(this.btnNuevo);
-            this.panelCN.Location = new System.Drawing.Point(37, 24);
+            this.panelCN.Location = new System.Drawing.Point(48, 23);
             this.panelCN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCN.Name = "panelCN";
-            this.panelCN.Size = new System.Drawing.Size(264, 513);
+            this.panelCN.Size = new System.Drawing.Size(264, 529);
             this.panelCN.TabIndex = 2;
             // 
             // panelF
@@ -122,7 +122,7 @@
             this.panelF.Controls.Add(this.label3);
             this.panelF.Controls.Add(this.cajaDni);
             this.panelF.Controls.Add(this.asdasdsa);
-            this.panelF.Location = new System.Drawing.Point(155, 11);
+            this.panelF.Location = new System.Drawing.Point(97, 11);
             this.panelF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelF.Name = "panelF";
             this.panelF.Size = new System.Drawing.Size(772, 618);

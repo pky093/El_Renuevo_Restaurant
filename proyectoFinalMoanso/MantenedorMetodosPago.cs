@@ -15,6 +15,10 @@ namespace proyectoFinalMoanso
     public partial class MantenedorMetodosPago : Form
     {
         EntPedido pe ;
+        int idcliente, idpedido;
+        float monto;
+        string tipoPago;
+        string fecha1;
         public MantenedorMetodosPago(string nombre,string apellidos,string pago,string fecha, string idCliente)
         {
             InitializeComponent();
@@ -23,6 +27,11 @@ namespace proyectoFinalMoanso
             this.labelTotal.Text = pago;
             pe = logPedido.Instancia.BuscarPedido(fecha,int.Parse(idCliente));
             labelIDpedido.Text = pe.idPedido.ToString();
+            //
+            this.idcliente = int.Parse(idCliente);
+            this.idpedido = pe.idPedido;
+            this.monto = float.Parse(pago);
+            this.fecha1= fecha;
         }
 
         private void btnEfectivo_Click(object sender, EventArgs e)
@@ -40,9 +49,20 @@ namespace proyectoFinalMoanso
 
         }
 
+        private void btnEfectivo_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.tipoPago = "efectivo";
+        }
+
+        private void btntarjeta_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.tipoPago = "tarjeta";
+        }
+
         private void btnComprobantePago_Click(object sender, EventArgs e)
         {
-            ComprantePago mm = new ComprantePago();
+           
+            ComprantePago mm = new ComprantePago(this.idcliente,this.idpedido,this.monto,this.fecha1,this.tipoPago);
             mm.Visible=true;
         }
     }
