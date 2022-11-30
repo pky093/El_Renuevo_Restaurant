@@ -63,7 +63,7 @@
             this.btnEfectivo.Image = global::proyectoFinalMoanso.Properties.Resources.dinero_en_efectivo1;
             this.btnEfectivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEfectivo.Location = new System.Drawing.Point(105, 33);
-            this.btnEfectivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEfectivo.Margin = new System.Windows.Forms.Padding(2);
             this.btnEfectivo.Name = "btnEfectivo";
             this.btnEfectivo.Size = new System.Drawing.Size(197, 72);
             this.btnEfectivo.TabIndex = 0;
@@ -81,7 +81,7 @@
             this.btntarjeta.Image = global::proyectoFinalMoanso.Properties.Resources.visa;
             this.btntarjeta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntarjeta.Location = new System.Drawing.Point(483, 33);
-            this.btntarjeta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btntarjeta.Margin = new System.Windows.Forms.Padding(2);
             this.btntarjeta.Name = "btntarjeta";
             this.btntarjeta.Size = new System.Drawing.Size(197, 72);
             this.btntarjeta.TabIndex = 1;
@@ -102,7 +102,7 @@
             this.panelEfectivo.Controls.Add(this.label4);
             this.panelEfectivo.Controls.Add(this.label3);
             this.panelEfectivo.Location = new System.Drawing.Point(23, 137);
-            this.panelEfectivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelEfectivo.Margin = new System.Windows.Forms.Padding(2);
             this.panelEfectivo.Name = "panelEfectivo";
             this.panelEfectivo.Size = new System.Drawing.Size(372, 274);
             this.panelEfectivo.TabIndex = 2;
@@ -115,9 +115,8 @@
             this.labelIDpedido.Location = new System.Drawing.Point(184, 72);
             this.labelIDpedido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelIDpedido.Name = "labelIDpedido";
-            this.labelIDpedido.Size = new System.Drawing.Size(27, 29);
+            this.labelIDpedido.Size = new System.Drawing.Size(0, 29);
             this.labelIDpedido.TabIndex = 12;
-            this.labelIDpedido.Text = "n";
             this.labelIDpedido.UseWaitCursor = true;
             // 
             // label9
@@ -151,9 +150,8 @@
             this.labelTotal.Location = new System.Drawing.Point(201, 198);
             this.labelTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(20, 29);
+            this.labelTotal.Size = new System.Drawing.Size(0, 29);
             this.labelTotal.TabIndex = 9;
-            this.labelTotal.Text = "t";
             this.labelTotal.UseWaitCursor = true;
             // 
             // label5
@@ -175,9 +173,8 @@
             this.labelApellido.Location = new System.Drawing.Point(184, 156);
             this.labelApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelApellido.Name = "labelApellido";
-            this.labelApellido.Size = new System.Drawing.Size(27, 29);
+            this.labelApellido.Size = new System.Drawing.Size(0, 29);
             this.labelApellido.TabIndex = 7;
-            this.labelApellido.Text = "a";
             this.labelApellido.UseWaitCursor = true;
             // 
             // labelNombre
@@ -187,9 +184,8 @@
             this.labelNombre.Location = new System.Drawing.Point(184, 115);
             this.labelNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(27, 29);
+            this.labelNombre.Size = new System.Drawing.Size(0, 29);
             this.labelNombre.TabIndex = 6;
-            this.labelNombre.Text = "n";
             this.labelNombre.UseWaitCursor = true;
             // 
             // label4
@@ -227,7 +223,7 @@
             this.panelTarjeta.Controls.Add(this.textBox1);
             this.panelTarjeta.Controls.Add(this.label1);
             this.panelTarjeta.Location = new System.Drawing.Point(430, 137);
-            this.panelTarjeta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTarjeta.Margin = new System.Windows.Forms.Padding(2);
             this.panelTarjeta.Name = "panelTarjeta";
             this.panelTarjeta.Size = new System.Drawing.Size(345, 274);
             this.panelTarjeta.TabIndex = 3;
@@ -236,7 +232,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(26, 222);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(60, 20);
             this.textBox4.TabIndex = 12;
@@ -248,15 +244,15 @@
             this.label7.Location = new System.Drawing.Point(22, 196);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 30);
+            this.label7.Size = new System.Drawing.Size(51, 30);
             this.label7.TabIndex = 11;
-            this.label7.Text = "cv:";
+            this.label7.Text = "cvv:";
             this.label7.UseWaitCursor = true;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(26, 167);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(105, 20);
             this.textBox3.TabIndex = 10;
@@ -264,7 +260,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(26, 110);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(265, 20);
             this.textBox2.TabIndex = 9;
@@ -296,7 +292,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(26, 50);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(265, 20);
             this.textBox1.TabIndex = 6;
@@ -320,7 +316,7 @@
             this.btnComprobantePago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComprobantePago.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComprobantePago.Location = new System.Drawing.Point(165, 426);
-            this.btnComprobantePago.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnComprobantePago.Margin = new System.Windows.Forms.Padding(2);
             this.btnComprobantePago.Name = "btnComprobantePago";
             this.btnComprobantePago.Size = new System.Drawing.Size(495, 66);
             this.btnComprobantePago.TabIndex = 4;
@@ -340,7 +336,7 @@
             this.Controls.Add(this.panelEfectivo);
             this.Controls.Add(this.btntarjeta);
             this.Controls.Add(this.btnEfectivo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MantenedorMetodosPago";
             this.Text = "FormasPago";
             this.panelEfectivo.ResumeLayout(false);

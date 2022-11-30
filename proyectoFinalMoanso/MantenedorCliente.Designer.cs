@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorCliente));
             this.btnContinuo = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.panelCN = new System.Windows.Forms.Panel();
@@ -74,7 +75,7 @@
             this.btnContinuo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnContinuo.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContinuo.Location = new System.Drawing.Point(37, 58);
-            this.btnContinuo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnContinuo.Margin = new System.Windows.Forms.Padding(2);
             this.btnContinuo.Name = "btnContinuo";
             this.btnContinuo.Size = new System.Drawing.Size(119, 53);
             this.btnContinuo.TabIndex = 0;
@@ -89,7 +90,7 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnNuevo.Location = new System.Drawing.Point(37, 253);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(119, 51);
             this.btnNuevo.TabIndex = 1;
@@ -102,7 +103,7 @@
             this.panelCN.Controls.Add(this.btnContinuo);
             this.panelCN.Controls.Add(this.btnNuevo);
             this.panelCN.Location = new System.Drawing.Point(36, 19);
-            this.panelCN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCN.Margin = new System.Windows.Forms.Padding(2);
             this.panelCN.Name = "panelCN";
             this.panelCN.Size = new System.Drawing.Size(198, 430);
             this.panelCN.TabIndex = 2;
@@ -122,8 +123,8 @@
             this.panelF.Controls.Add(this.label3);
             this.panelF.Controls.Add(this.cajaDni);
             this.panelF.Controls.Add(this.asdasdsa);
-            this.panelF.Location = new System.Drawing.Point(73, 9);
-            this.panelF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelF.Location = new System.Drawing.Point(109, 11);
+            this.panelF.Margin = new System.Windows.Forms.Padding(2);
             this.panelF.Name = "panelF";
             this.panelF.Size = new System.Drawing.Size(579, 502);
             this.panelF.TabIndex = 4;
@@ -147,7 +148,7 @@
             this.cajaIDcliente.Enabled = false;
             this.cajaIDcliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cajaIDcliente.Location = new System.Drawing.Point(233, 168);
-            this.cajaIDcliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cajaIDcliente.Margin = new System.Windows.Forms.Padding(2);
             this.cajaIDcliente.Name = "cajaIDcliente";
             this.cajaIDcliente.Size = new System.Drawing.Size(266, 27);
             this.cajaIDcliente.TabIndex = 11;
@@ -155,39 +156,45 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(167)))), ((int)(((byte)(18)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(363, 427);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 53);
             this.button2.TabIndex = 10;
             this.button2.Text = "BORRAR CAMPOS";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.UseWaitCursor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // BtnAgregar
             // 
+            this.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(167)))), ((int)(((byte)(18)))));
             this.BtnAgregar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BtnAgregar.FlatAppearance.BorderSize = 0;
+            this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
             this.BtnAgregar.Location = new System.Drawing.Point(147, 427);
-            this.BtnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(119, 53);
             this.BtnAgregar.TabIndex = 9;
             this.BtnAgregar.Text = "AGREGAR";
-            this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.UseVisualStyleBackColor = false;
             this.BtnAgregar.UseWaitCursor = true;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.perfil_de_cliente_e1549901099803_1;
-            this.pictureBox1.Location = new System.Drawing.Point(148, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(171, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(233, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
@@ -196,7 +203,7 @@
             // 
             this.cajaNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cajaNombre.Location = new System.Drawing.Point(233, 219);
-            this.cajaNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cajaNombre.Margin = new System.Windows.Forms.Padding(2);
             this.cajaNombre.Name = "cajaNombre";
             this.cajaNombre.Size = new System.Drawing.Size(266, 27);
             this.cajaNombre.TabIndex = 7;
@@ -206,7 +213,7 @@
             // 
             this.cajaApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cajaApellido.Location = new System.Drawing.Point(233, 263);
-            this.cajaApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cajaApellido.Margin = new System.Windows.Forms.Padding(2);
             this.cajaApellido.Name = "cajaApellido";
             this.cajaApellido.Size = new System.Drawing.Size(266, 27);
             this.cajaApellido.TabIndex = 6;
@@ -216,7 +223,7 @@
             // 
             this.cajaTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cajaTelefono.Location = new System.Drawing.Point(233, 314);
-            this.cajaTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cajaTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.cajaTelefono.Name = "cajaTelefono";
             this.cajaTelefono.Size = new System.Drawing.Size(266, 27);
             this.cajaTelefono.TabIndex = 5;
@@ -262,7 +269,7 @@
             // 
             this.cajaDni.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cajaDni.Location = new System.Drawing.Point(233, 365);
-            this.cajaDni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cajaDni.Margin = new System.Windows.Forms.Padding(2);
             this.cajaDni.Name = "cajaDni";
             this.cajaDni.Size = new System.Drawing.Size(266, 27);
             this.cajaDni.TabIndex = 1;
@@ -297,7 +304,7 @@
             this.panel1.Controls.Add(this.cajatextoidCLI);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(263, 19);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(465, 440);
             this.panel1.TabIndex = 3;
@@ -312,7 +319,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("PMingLiU-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(321, 380);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 50);
             this.button1.TabIndex = 21;
@@ -451,7 +458,7 @@
             this.btnagregar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnagregar2.Font = new System.Drawing.Font("PMingLiU-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnagregar2.Location = new System.Drawing.Point(115, 90);
-            this.btnagregar2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnagregar2.Margin = new System.Windows.Forms.Padding(2);
             this.btnagregar2.Name = "btnagregar2";
             this.btnagregar2.Size = new System.Drawing.Size(188, 73);
             this.btnagregar2.TabIndex = 10;
@@ -464,7 +471,7 @@
             // 
             this.cajatextoidCLI.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cajatextoidCLI.Location = new System.Drawing.Point(218, 34);
-            this.cajatextoidCLI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cajatextoidCLI.Margin = new System.Windows.Forms.Padding(2);
             this.cajatextoidCLI.Name = "cajatextoidCLI";
             this.cajatextoidCLI.Size = new System.Drawing.Size(224, 27);
             this.cajatextoidCLI.TabIndex = 1;
@@ -491,7 +498,7 @@
             this.Controls.Add(this.panelF);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelCN);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "MantenedorCliente";
             this.Text = "MantenedorCliente";
