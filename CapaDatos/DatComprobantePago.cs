@@ -12,7 +12,7 @@ namespace CapaDatos
     public class DatComprobantePago
     {
         #region sigleton
-        EntComprobantePago Cli = null;
+        
         //Patron Singleton
         // Variable estática para la instancia
         private static readonly DatComprobantePago _instancia = new DatComprobantePago();

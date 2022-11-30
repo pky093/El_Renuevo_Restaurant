@@ -45,6 +45,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="datCliente.cs" />
     <Compile Include="DatComprobantePago.cs" />
+    <Compile Include="DatInsumos.cs" />
     <Compile Include="datPedido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

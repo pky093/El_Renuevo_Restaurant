@@ -464,6 +464,26 @@ namespace proyectoFinalMoanso.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lista_de_verificacion {
+            get {
+                object obj = ResourceManager.GetObject("lista-de-verificacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap listar {
+            get {
+                object obj = ResourceManager.GetObject("listar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logoHorizontal {
             get {
                 object obj = ResourceManager.GetObject("logoHorizontal", resourceCulture);
@@ -557,6 +577,16 @@ namespace proyectoFinalMoanso.Properties {
         internal static System.Drawing.Bitmap png_transparent_cafe_indian_cuisine_online_food_ordering_menu_love_food_text {
             get {
                 object obj = ResourceManager.GetObject("png-transparent-cafe-indian-cuisine-online-food-ordering-menu-love-food-text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap registrar {
+            get {
+                object obj = ResourceManager.GetObject("registrar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
