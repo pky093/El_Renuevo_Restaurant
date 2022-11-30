@@ -62,7 +62,7 @@ namespace CapaDatos
         public EntPedido BuscaridPedido(string fecha,int id)
         {
             SqlCommand cmd = null;
-            pe = new EntPedido();
+            EntPedido pe = new EntPedido();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton

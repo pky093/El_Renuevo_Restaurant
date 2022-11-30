@@ -60,7 +60,7 @@ namespace CapaDatos
         public Entcliente BuscaridCliente(int idcliente)
         {
             SqlCommand cmd = null;
-            Cli = new Entcliente();
+             Entcliente Cli = new Entcliente();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
