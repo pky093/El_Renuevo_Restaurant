@@ -84,6 +84,7 @@ namespace proyectoFinalMoanso
         private void BtnListar_Click_1(object sender, EventArgs e)
         {
             panelCajas.Visible = false;
+            panelBorrar.Visible =false;
             dgvInsumos.DataSource = logInsumo.Instancia.ListarInsumOrdenado();
         }
 
