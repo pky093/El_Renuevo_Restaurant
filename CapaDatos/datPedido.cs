@@ -14,7 +14,7 @@ namespace CapaDatos
     public class datPedido
     {
         #region sigleton
-        EntPedido pe;
+        
         //Patron Singleton
         // Variable estática para la instancia
         private static readonly datPedido _instancia = new datPedido();

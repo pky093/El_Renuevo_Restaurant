@@ -12,7 +12,7 @@ namespace CapaDatos
     public class datCliente
     {
         #region sigleton
-        Entcliente Cli = null;
+        
         //Patron Singleton
         // Variable estática para la instancia
         private static readonly datCliente _instancia = new datCliente();
