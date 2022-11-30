@@ -56,8 +56,9 @@
             this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(697, 33);
+            this.panel1.Size = new System.Drawing.Size(523, 27);
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -65,9 +66,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(285, 5);
+            this.label3.Location = new System.Drawing.Point(214, 4);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 25);
+            this.label3.Size = new System.Drawing.Size(120, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "Administrador";
             // 
@@ -75,9 +77,10 @@
             // 
             this.btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn.Image = ((System.Drawing.Image)(resources.GetObject("btn.Image")));
-            this.btn.Location = new System.Drawing.Point(592, 3);
+            this.btn.Location = new System.Drawing.Point(444, 2);
+            this.btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(48, 24);
+            this.btn.Size = new System.Drawing.Size(36, 20);
             this.btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn.TabIndex = 4;
             this.btn.TabStop = false;
@@ -88,9 +91,10 @@
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Image = global::proyectoFinalMoanso.Properties.Resources.exis;
-            this.btnCerrar.Location = new System.Drawing.Point(646, 3);
+            this.btnCerrar.Location = new System.Drawing.Point(484, 2);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(48, 24);
+            this.btnCerrar.Size = new System.Drawing.Size(36, 20);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 2;
             this.btnCerrar.TabStop = false;
@@ -107,30 +111,33 @@
             this.panel2.Controls.Add(this.cajausuario);
             this.panel2.Controls.Add(this.usuario);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 33);
+            this.panel2.Location = new System.Drawing.Point(0, 27);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(697, 498);
+            this.panel2.Size = new System.Drawing.Size(523, 404);
             this.panel2.TabIndex = 2;
-            
             // 
             // Ingresar
             // 
             this.Ingresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(167)))), ((int)(((byte)(18)))));
             this.Ingresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Ingresar.Location = new System.Drawing.Point(245, 401);
+            this.Ingresar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ingresar.Location = new System.Drawing.Point(184, 326);
+            this.Ingresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Ingresar.Name = "Ingresar";
-            this.Ingresar.Size = new System.Drawing.Size(218, 61);
+            this.Ingresar.Size = new System.Drawing.Size(164, 50);
             this.Ingresar.TabIndex = 13;
-            this.Ingresar.Text = "Iniciar Sesión";
+            this.Ingresar.Text = "INICIAR SESIÓN";
             this.Ingresar.UseVisualStyleBackColor = false;
             this.Ingresar.Click += new System.EventHandler(this.Ingresar_Click);
             // 
             // checkcontra
             // 
             this.checkcontra.AutoSize = true;
-            this.checkcontra.Location = new System.Drawing.Point(497, 330);
+            this.checkcontra.Location = new System.Drawing.Point(373, 268);
+            this.checkcontra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkcontra.Name = "checkcontra";
-            this.checkcontra.Size = new System.Drawing.Size(146, 20);
+            this.checkcontra.Size = new System.Drawing.Size(118, 17);
             this.checkcontra.TabIndex = 12;
             this.checkcontra.Text = "Mostrar Contraseña";
             this.checkcontra.UseVisualStyleBackColor = true;
@@ -139,9 +146,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::proyectoFinalMoanso.Properties.Resources.admin21;
-            this.pictureBox1.Location = new System.Drawing.Point(245, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(184, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 197);
+            this.pictureBox1.Size = new System.Drawing.Size(182, 160);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
@@ -150,47 +158,52 @@
             // 
             this.contrasena.AutoSize = true;
             this.contrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contrasena.Location = new System.Drawing.Point(54, 322);
+            this.contrasena.Location = new System.Drawing.Point(40, 262);
+            this.contrasena.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.contrasena.Name = "contrasena";
-            this.contrasena.Size = new System.Drawing.Size(174, 32);
+            this.contrasena.Size = new System.Drawing.Size(136, 26);
             this.contrasena.TabIndex = 10;
             this.contrasena.Text = "contraseña:";
             // 
             // cajacontra
             // 
-            this.cajacontra.Location = new System.Drawing.Point(245, 328);
+            this.cajacontra.Location = new System.Drawing.Point(184, 266);
+            this.cajacontra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cajacontra.Multiline = true;
             this.cajacontra.Name = "cajacontra";
             this.cajacontra.PasswordChar = '*';
-            this.cajacontra.Size = new System.Drawing.Size(218, 26);
+            this.cajacontra.Size = new System.Drawing.Size(164, 22);
             this.cajacontra.TabIndex = 9;
             // 
             // cajausuario
             // 
-            this.cajausuario.Location = new System.Drawing.Point(245, 261);
+            this.cajausuario.Location = new System.Drawing.Point(184, 212);
+            this.cajausuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cajausuario.Multiline = true;
             this.cajausuario.Name = "cajausuario";
-            this.cajausuario.Size = new System.Drawing.Size(218, 26);
+            this.cajausuario.Size = new System.Drawing.Size(164, 22);
             this.cajausuario.TabIndex = 6;
             // 
             // usuario
             // 
             this.usuario.AutoSize = true;
             this.usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usuario.Location = new System.Drawing.Point(100, 255);
+            this.usuario.Location = new System.Drawing.Point(75, 207);
+            this.usuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usuario.Name = "usuario";
-            this.usuario.Size = new System.Drawing.Size(128, 32);
+            this.usuario.Size = new System.Drawing.Size(101, 26);
             this.usuario.TabIndex = 5;
             this.usuario.Text = "Usuario:";
             // 
             // Administrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 531);
+            this.ClientSize = new System.Drawing.Size(523, 431);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Administrador";
             this.Text = "Administrador";
             this.panel1.ResumeLayout(false);
